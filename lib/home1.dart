@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learningapp/Registerpage1.dart';
+
+import 'package:flutter_learningapp/dart/dartpage.dart';
 
 class Home1 extends StatefulWidget {
   const Home1({super.key});
@@ -10,10 +11,11 @@ class Home1 extends StatefulWidget {
 
 class _Home1State extends State<Home1> {
   var selectedindex = 0;
-  var widgetoptions = [Registerpage1(), Home1(), Text("ooo")];
+  var widgetoptions = [Home1(), Text('data'), Text("ooo")];
   void change(int index) {
     setState(() {
       selectedindex = index;
+      print(selectedindex);
     });
   }
 
@@ -23,36 +25,31 @@ class _Home1State extends State<Home1> {
       appBar: AppBar(),
       backgroundColor: Color.fromRGBO(255, 255, 255, 1),
       drawer: Drawer(
-        width: 245,
-        backgroundColor: Color.fromARGB(255, 230, 230, 222),
-        child: ListView(
-          children: [
+        backgroundColor: Colors.white,
+        child: Padding(
+          padding: const EdgeInsets.only(left: 19, right: 19),
+          child: ListView(children: [
             DrawerHeader(
-                child: Center(
-                    child:
-                        Text("Welcome", style: TextStyle(color: Colors.white))),
-                decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 233, 230, 219),
-                    borderRadius: BorderRadius.circular(100))),
-            ListTile(
-                title: Text("Logout"),
-                tileColor: Color.fromARGB(255, 4, 106, 189),
-                shape: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(50),
-                ),
-                selected: selectedindex == 0,
-                onTap: () => change(0)),
-            ListTile(
-              title: Text("home"),
-              selected: selectedindex == 1,
-              onTap: () => change(1),
+              child: Text("Welcome"),
             ),
             ListTile(
-              title: Text("home"),
-              selected: selectedindex == 2,
-              onTap: () => change(2),
+              onTap: () {
+                change(0);
+                Navigator.pop(context);
+              },
+              title: Text("1"),
             ),
-          ],
+            Divider(),
+            ListTile(
+                onTap: () {
+                  change(1);
+                  Navigator.pop(context);
+                },
+                title: Text("2")),
+            Divider(),
+            ListTile(onTap: () => change(2), title: Text("2")),
+            Divider()
+          ]),
         ),
       ),
       body: Padding(
@@ -67,24 +64,33 @@ class _Home1State extends State<Home1> {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(12.0),
-                    child: Container(
-                      // height: 160,
-                      // width: 160,
-                      child: CircleAvatar(
-                        radius: 70,
-                        backgroundImage:
-                            AssetImage('asset/Investment data (1).gif'),
-                      ),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(100),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Color.fromARGB(255, 234, 227, 236),
-                            blurRadius: 8,
-                            spreadRadius: 5,
-                          )
-                        ],
-                        color: Color.fromARGB(255, 255, 255, 255),
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => Dartstarting(),
+                            ));
+                      },
+                      child: Container(
+                        // height: 160,
+                        // width: 160,
+                        child: CircleAvatar(
+                          radius: 70,
+                          backgroundImage:
+                              AssetImage('asset/Investment data (1).gif'),
+                        ),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Color.fromARGB(255, 234, 227, 236),
+                              blurRadius: 8,
+                              spreadRadius: 5,
+                            )
+                          ],
+                          color: Color.fromARGB(255, 255, 255, 255),
+                        ),
                       ),
                     ),
                   ),
