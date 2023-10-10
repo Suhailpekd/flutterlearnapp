@@ -20,6 +20,36 @@ class _NavigState extends State<Navig> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
+//  drawer: Drawer(
+//           backgroundColor: Colors.white,
+//           child: Padding(
+//             padding: const EdgeInsets.only(left: 19, right: 19),
+//             child: ListView(children: [
+//               DrawerHeader(
+//                 child: Text("Welcome"),
+//               ),
+//               ListTile(
+//                 onTap: () {
+//                   change(0);
+//                   Navigator.pop(context);
+//                 },
+//                 title: Text("1"),
+//               ),
+//               Divider(),
+//               ListTile(
+//                   onTap: () {
+//                     change(1);
+//                     Navigator.pop(context);
+//                   },
+//                   title: Text("2")),
+//               Divider(),
+//               ListTile(onTap: () => change(2), title: Text("2")),
+//               Divider()
+//             ]),
+//           ),
+//         ),
+
         body: Center(
           child: list1.elementAt(selectedindex),
         ),

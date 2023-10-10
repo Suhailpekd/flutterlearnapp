@@ -12,185 +12,224 @@ class _DartstartingState extends State<Dartstarting> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Container(
-              height: 50,
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(left: 25, top: 12),
-                    child: Container(
-                        height: 37,
-                        width: 37,
-                        child: Image.asset("asset/flutter-removebg.png")),
-                  ),
-                ],
-              ),
-            ),
-            Container(
-              decoration: BoxDecoration(
-                color: Color.fromARGB(255, 255, 255, 255),
-              ),
-              height: 135,
-              width: 200,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.asset(
-                    "asset/Dart_logo-removebg-preview.png",
-                  ),
-                ],
-              ),
-            ),
-            SizedBox(
-              height: 18,
-            ),
-
-            Row(
-              children: [
-                SizedBox(
-                  width: 20,
-                ),
-
-                //head
-
-                Expanded(
-                  child: Center(
-                    child: Text(
-                      "What is Dart ?",
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 17,
-                          color: const Color.fromARGB(255, 3, 2, 2)),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Row(
-              children: [
-                SizedBox(
-                  width: 40,
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(right: 7),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Icon(
-                        Icons.star_border_outlined,
-                        size: 12,
-                      ),
-                    ],
-                  ),
-                ),
-
-                //point first
-
-                Expanded(
-                  child: Text(
-                    "Dart is a client optimized object oriented programming language ",
-                    style: TextStyle(
-                        fontSize: 14,
-                        color: const Color.fromARGB(255, 3, 2, 2)),
-                  ),
-                ),
-              ],
-            ),
-            SizedBox(
-              height: 18,
-            ),
-
-            //second point
-
-            Row(
-              children: [
-                SizedBox(
-                  width: 40,
-                ),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Container(
+                height: 50,
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(right: 7),
-                      child: Icon(
-                        Icons.star_border_outlined,
-                        size: 12,
-                      ),
+                      padding: const EdgeInsets.only(left: 25, top: 12),
+                      child: Container(
+                          height: 37,
+                          width: 37,
+                          child: Image.asset("asset/flutter-removebg.png")),
                     ),
                   ],
                 ),
-                Expanded(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
+              ),
+
+              Column(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Color.fromARGB(255, 255, 255, 255),
+                    ),
+                    height: 135,
+                    width: 200,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.asset(
+                          "asset/Dart_logo-removebg-preview.png",
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  SizedBox(
+                    height: 40,
+                  ),
+
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
+                      //head
+
                       Text(
-                        " Dart programming is known for its efficiency, allowing applications to run smoothly and respond quickly",
+                        "Why Should You Learn Dart ?",
                         style: TextStyle(
-                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 17,
                             color: const Color.fromARGB(255, 3, 2, 2)),
                       ),
                     ],
                   ),
-                ),
-              ],
-            ),
-            SizedBox(
-              height: 25,
-            ),
 
-            //third point
-
-            Row(
-              children: [
-                SizedBox(
-                  width: 20,
-                ),
-                SizedBox(
-                  width: 20,
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(right: 7),
-                  child: Icon(
-                    Icons.star_border_outlined,
-                    size: 12,
+                  SizedBox(
+                    height: 20,
                   ),
-                ),
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.only(
-                      right: 30,
-                    ),
-                    child: Text(
-                      " Dart smoothly and respond quickly",
-                      style: TextStyle(
-                          fontSize: 14,
-                          color: const Color.fromARGB(255, 3, 2, 2)),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-            SizedBox(
-              height: 25,
-            ),
 
-            InkWell(
-                child: Container(
-              width: 200,
-              height: 35,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(17),
-                  border: Border.all(color: Colors.black, width: 2)),
-              child: Center(child: Text("LET'S START ")),
-            ))
-          ],
+                  //point first
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(right: 7, left: 20),
+                        child: Icon(
+                          Icons.arrow_right,
+                          size: 20,
+                        ),
+                      ),
+                      Expanded(
+                        child: Text('Free and open source'),
+                      )
+                    ],
+                  ),
+
+                  SizedBox(
+                    height: 10,
+                  ),
+
+                  //second point
+
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(right: 7, left: 20),
+                        child: Icon(
+                          Icons.arrow_right,
+                          size: 20,
+                        ),
+                      ),
+                      Expanded(
+                        child: Text('To be comfortable in a flutter.'),
+                      )
+                    ],
+                  ),
+
+                  SizedBox(
+                    height: 10,
+                  ),
+
+                  // third point
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(right: 7, left: 20),
+                        child: Icon(
+                          Icons.arrow_right,
+                          size: 20,
+                        ),
+                      ),
+                      Expanded(
+                        child: Text('To be comfortable in a flutter.'),
+                      )
+                    ],
+                  ),
+
+                  SizedBox(
+                    height: 10,
+                  ),
+
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(right: 7, left: 20),
+                        child: Icon(
+                          Icons.arrow_right,
+                          size: 20,
+                        ),
+                      ),
+                      Expanded(
+                        child: Text(
+                            'To develop multi-platform apps for android, iOS, windows, mac, Linux, etc.'),
+                      )
+                    ],
+                  ),
+
+                  SizedBox(
+                    height: 10,
+                  ),
+
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(right: 7, left: 20),
+                        child: Icon(
+                          Icons.arrow_right,
+                          size: 20,
+                        ),
+                      ),
+                      Expanded(
+                        child: Text('Fastest growing programming language. '),
+                      )
+                    ],
+                  ),
+
+                  SizedBox(
+                    height: 10,
+                  ),
+
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(right: 7, left: 20),
+                        child: Icon(
+                          Icons.arrow_right,
+                          size: 20,
+                        ),
+                      ),
+                      Expanded(
+                        child: Text('It has rich set of libraries and tools. '),
+                      )
+                    ],
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(right: 7, left: 20),
+                        child: Icon(
+                          Icons.arrow_right,
+                          size: 20,
+                        ),
+                      ),
+                      Expanded(
+                        child: Text('Huge community support. '),
+                      )
+                    ],
+                  ),
+                ],
+              ),
+
+              //button
+
+              Padding(
+                padding: const EdgeInsets.all(30),
+                child: InkWell(
+                    child: Container(
+                  width: 200,
+                  height: 35,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(17),
+                      border: Border.all(color: Colors.black, width: 2)),
+                  child: Center(child: Text("LET'S START ")),
+                )),
+              )
+            ],
+          ),
         ),
       ),
     );
