@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_learningapp/dart/dartpage.dart';
+import 'package:flutter_learningapp/flutter/flutter1.dart';
+import 'package:flutter_learningapp/flutter/tests/tests.dart';
 
 class Home1 extends StatefulWidget {
   const Home1({super.key});
@@ -24,13 +26,36 @@ class _Home1State extends State<Home1> {
     return Scaffold(
       appBar: AppBar(),
       backgroundColor: Color.fromRGBO(255, 255, 255, 1),
-      drawer: Drawer(
-        backgroundColor: Colors.white,
-        child: Padding(
-          padding: const EdgeInsets.only(left: 19, right: 19),
+      drawer: Expanded(
+        child: Drawer(
+          backgroundColor: Colors.white,
           child: ListView(children: [
             DrawerHeader(
-              child: Text("Welcome"),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 15),
+                    child: Text("Welcome.", softWrap: mounted),
+                  ),
+                  Expanded(
+                    child: Row(
+                      children: [
+                        CircleAvatar(
+                          radius: 35,
+                          backgroundImage:
+                              AssetImage("asset/flutter-removebg.png"),
+                          backgroundColor: Colors.white,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Expanded(child: Text("Suhail*****@gmail.com"))
+                      ],
+                    ),
+                  ),
+                ],
+              ),
             ),
             ListTile(
               onTap: () {
@@ -126,24 +151,36 @@ class _Home1State extends State<Home1> {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(12.0),
-                    child: Container(
-                      // height: 160,
-                      // width: 160,
-                      child: CircleAvatar(
-                        radius: 70,
-                        backgroundImage:
-                            AssetImage('asset/Mobile development (1).gif'),
-                      ),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(100),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Color.fromARGB(255, 234, 227, 236),
-                            blurRadius: 8,
-                            spreadRadius: 5,
-                          )
-                        ],
-                        color: Color.fromARGB(255, 255, 255, 255),
+
+                    //flutter container starts
+
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => Flutterstarting(),
+                            ));
+                      },
+                      child: Container(
+                        // height: 160,
+                        // width: 160,
+                        child: CircleAvatar(
+                          radius: 70,
+                          backgroundImage:
+                              AssetImage('asset/Mobile development (1).gif'),
+                        ),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Color.fromARGB(255, 234, 227, 236),
+                              blurRadius: 8,
+                              spreadRadius: 5,
+                            )
+                          ],
+                          color: Color.fromARGB(255, 255, 255, 255),
+                        ),
                       ),
                     ),
                   ),
@@ -181,23 +218,33 @@ class _Home1State extends State<Home1> {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(12.0),
-                    child: Container(
-                      // height: 160,
-                      // width: 160,
-                      child: CircleAvatar(
-                        radius: 70,
-                        backgroundImage: AssetImage('asset/Exams.gif'),
-                      ),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(100),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Color.fromARGB(255, 234, 227, 236),
-                            blurRadius: 8,
-                            spreadRadius: 5,
-                          )
-                        ],
-                        color: Color.fromARGB(255, 255, 255, 255),
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.push(
+                          (context),
+                          MaterialPageRoute(
+                            builder: (context) => Tests1(),
+                          ),
+                        );
+                      },
+                      child: Container(
+                        // height: 160,
+                        // width: 160,
+                        child: CircleAvatar(
+                          radius: 70,
+                          backgroundImage: AssetImage('asset/Exams.gif'),
+                        ),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Color.fromARGB(255, 234, 227, 236),
+                              blurRadius: 8,
+                              spreadRadius: 5,
+                            )
+                          ],
+                          color: Color.fromARGB(255, 255, 255, 255),
+                        ),
                       ),
                     ),
                   ),
