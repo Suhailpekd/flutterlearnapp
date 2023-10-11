@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_learningapp/botomnav.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'package:lottie/lottie.dart';
-import 'package:shimmer/shimmer.dart';
-
 class Registerpage1 extends StatefulWidget {
   const Registerpage1({super.key});
 

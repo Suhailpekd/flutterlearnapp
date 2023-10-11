@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learningapp/dart/whatisdart.dart';
+import 'package:flutter_learningapp/dart/1whatisdart.dart';
+import 'package:flutter_learningapp/dart/2Datatypes.dart';
 
 class Indexdart extends StatefulWidget {
   const Indexdart({super.key});
@@ -58,34 +59,43 @@ class _IndexdartState extends State<Indexdart> {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 28, right: 28),
-            child: Container(
-              child: Padding(
-                padding: const EdgeInsets.only(right: 20, left: 20),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      " 2)  Data Types",
-                      style: TextStyle(
-                          color: Colors.black, fontWeight: FontWeight.bold),
-                    ),
-                    Icon(Icons.arrow_circle_right,
-                        color: const Color.fromARGB(164, 47, 43, 43))
-                  ],
+            child: InkWell(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Datatypes(),
+                    ));
+              },
+              child: Container(
+                child: Padding(
+                  padding: const EdgeInsets.only(right: 20, left: 20),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        " 2)  Data Types",
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ),
+                      Icon(Icons.arrow_circle_right,
+                          color: const Color.fromARGB(164, 47, 43, 43))
+                    ],
+                  ),
                 ),
-              ),
-              height: 60,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    blurStyle: BlurStyle.outer,
-                    color: Color.fromARGB(255, 234, 227, 236),
-                    blurRadius: 8,
-                    spreadRadius: 2,
-                  )
-                ],
-                borderRadius: BorderRadius.circular(15),
-                color: Colors.white,
+                height: 60,
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      blurStyle: BlurStyle.outer,
+                      color: Color.fromARGB(255, 234, 227, 236),
+                      blurRadius: 8,
+                      spreadRadius: 2,
+                    )
+                  ],
+                  borderRadius: BorderRadius.circular(15),
+                  color: Colors.white,
+                ),
               ),
             ),
           ),

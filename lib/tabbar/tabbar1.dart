@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_learningapp/Registerpage1.dart';
-import 'package:flutter_learningapp/dart/dartpage.dart';
-import 'package:flutter_learningapp/index.dart';
+import 'package:flutter_learningapp/tabbar/discription.dart';
+import 'package:flutter_learningapp/tabbar/index.dart';
 
 class Dart2 extends StatefulWidget {
   const Dart2({super.key});
@@ -32,7 +32,6 @@ class _Dart2State extends State<Dart2> {
           children: [
             Indexdart(),
             Dartstarting(),
-            Icon(Icons.directions_transit, size: 350),
           ],
         ),
       ),

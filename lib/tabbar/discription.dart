@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learningapp/dart/dart2.dart';
+import 'package:flutter_learningapp/tabbar/tabbar1.dart';
 
 class Dartstarting extends StatefulWidget {
   const Dartstarting({super.key});
