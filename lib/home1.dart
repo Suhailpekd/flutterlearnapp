@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learningapp/dart/dart2.dart';
 
 import 'package:flutter_learningapp/dart/dartpage.dart';
 import 'package:flutter_learningapp/flutter/flutter1.dart';
@@ -94,7 +95,7 @@ class _Home1State extends State<Home1> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => Dartstarting(),
+                              builder: (context) => Dart2(),
                             ));
                       },
                       child: Container(

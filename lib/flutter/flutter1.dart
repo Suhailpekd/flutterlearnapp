@@ -11,92 +11,284 @@ class _DartstartingState extends State<Flutterstarting> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(toolbarHeight: 40, actions: [
-        Row(
-          children: [
-            SizedBox(
-              width: 30,
-              height: 30,
-              child: Image.asset("asset/flutter-removebg.png"),
-            )
-          ],
-        )
-      ]),
-      body: ListView(
-        children: [
-          Column(
+      backgroundColor: Colors.white,
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Column(
             children: [
               Container(
-                height: 250,
-                width: 250,
-                color: Color.fromARGB(255, 255, 255, 255),
+                height: 50,
                 child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Image.asset(
-                      "asset/Mobile development22.gif",
+                    Padding(
+                      padding: const EdgeInsets.only(left: 25, top: 12),
+                      child: Container(
+                          height: 37,
+                          width: 37,
+                          child: Image.asset("asset/flutter-removebg.png")),
                     ),
                   ],
                 ),
               ),
-              SizedBox(
-                height: 40,
-              ),
-              Row(
+
+              Column(
                 children: [
-                  SizedBox(
-                    width: 20,
-                  ),
-                  Icon(Icons.star_border_outlined),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Expanded(
-                    child: Text(
-                      "What is Flutter ?",
-                      style: TextStyle(
-                          fontSize: 30,
-                          color: const Color.fromARGB(255, 3, 2, 2)),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Color.fromARGB(255, 255, 255, 255),
                     ),
+                    height: 135,
+                    // width: 100,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.asset(
+                          "asset/flutterog.png",
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  SizedBox(
+                    height: 40,
+                  ),
+
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      //head
+
+                      Text(
+                        "Why Flutter?",
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 17,
+                            color: const Color.fromARGB(255, 3, 2, 2)),
+                      ),
+                    ],
+                  ),
+
+                  SizedBox(
+                    height: 20,
+                  ),
+
+                  //point first
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(right: 7, left: 20),
+                        child: Icon(
+                          Icons.arrow_right,
+                          size: 20,
+                        ),
+                      ),
+                      Expanded(
+                        child: Text('Fast Development'),
+                      )
+                    ],
+                  ),
+
+                  SizedBox(
+                    height: 10,
+                  ),
+
+                  //second point
+
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(right: 7, left: 20),
+                        child: Icon(
+                          Icons.arrow_right,
+                          size: 20,
+                        ),
+                      ),
+                      Expanded(
+                        child: Text('High-Performance'),
+                      )
+                    ],
+                  ),
+
+                  SizedBox(
+                    height: 10,
+                  ),
+
+                  // third point
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(right: 7, left: 20),
+                        child: Icon(
+                          Icons.arrow_right,
+                          size: 20,
+                        ),
+                      ),
+                      Expanded(
+                        child: Text('Quick Testing'),
+                      )
+                    ],
+                  ),
+
+                  SizedBox(
+                    height: 10,
+                  ),
+
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(right: 7, left: 20),
+                        child: Icon(
+                          Icons.arrow_right,
+                          size: 20,
+                        ),
+                      ),
+                      Expanded(
+                        child: Text('Easy Cross-Platform Development'),
+                      )
+                    ],
+                  ),
+
+                  SizedBox(
+                    height: 10,
+                  ),
+
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(right: 7, left: 20),
+                        child: Icon(
+                          Icons.arrow_right,
+                          size: 20,
+                        ),
+                      ),
+                      Expanded(
+                        child: Text('Customizable Widgets'),
+                      )
+                    ],
+                  ),
+
+                  SizedBox(
+                    height: 10,
+                  ),
+
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(right: 7, left: 20),
+                        child: Icon(
+                          Icons.arrow_right,
+                          size: 20,
+                        ),
+                      ),
+                      Expanded(
+                        child: Text('Cost-Effectiveness'),
+                      )
+                    ],
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(right: 7, left: 20),
+                        child: Icon(
+                          Icons.arrow_right,
+                          size: 20,
+                        ),
+                      ),
+                      Expanded(
+                        child: Text('Rich UI support. '),
+                      )
+                    ],
+                  ),
+
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(right: 7, left: 20),
+                        child: Icon(
+                          Icons.arrow_right,
+                          size: 20,
+                        ),
+                      ),
+                      Expanded(
+                        child: Text(
+                            ' High Productivity of Flutter App DEvelopers'),
+                      )
+                    ],
+                  ),
+
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(right: 7, left: 20),
+                        child: Icon(
+                          Icons.arrow_right,
+                          size: 20,
+                        ),
+                      ),
+                      Expanded(
+                        child: Text('Front-End and Backend with One code'),
+                      )
+                    ],
+                  ),
+
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(right: 7, left: 20),
+                        child: Icon(
+                          Icons.arrow_right,
+                          size: 20,
+                        ),
+                      ),
+                      Expanded(
+                        child:
+                            Text('Extension Catalog for Open Source Packages '),
+                      )
+                    ],
                   ),
                 ],
               ),
-              Row(
-                children: [
-                  SizedBox(
-                    width: 20,
-                  ),
-                  Icon(Icons.star_border_outlined),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Expanded(
-                    child: Text(
-                      " Why Flutter?",
-                      style: TextStyle(
-                          fontSize: 30,
-                          color: const Color.fromARGB(255, 3, 2, 2)),
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: 300,
-              ),
-              InkWell(
-                  child: Container(
-                width: 200,
-                height: 35,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(17),
-                    border: Border.all(color: Colors.black, width: 2)),
-                child: Center(child: Text("LET'S START")),
-              ))
+
+              //button
+
+              Padding(
+                padding: const EdgeInsets.all(30),
+                child: InkWell(
+                    child: Container(
+                  width: 200,
+                  height: 35,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(17),
+                      border: Border.all(color: Colors.black, width: 2)),
+                  child: Center(child: Text("LET'S START ")),
+                )),
+              )
             ],
           ),
-          SizedBox(
-            height: 45,
-          ),
-        ],
+        ),
       ),
     );
   }

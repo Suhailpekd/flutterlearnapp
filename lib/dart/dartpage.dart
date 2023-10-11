@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learningapp/dart/dart2.dart';
 
 class Dartstarting extends StatefulWidget {
   const Dartstarting({super.key});
@@ -16,20 +17,8 @@ class _DartstartingState extends State<Dartstarting> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Container(
-                height: 50,
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 25, top: 12),
-                      child: Container(
-                          height: 37,
-                          width: 37,
-                          child: Image.asset("asset/flutter-removebg.png")),
-                    ),
-                  ],
-                ),
+              SizedBox(
+                height: 57,
               ),
 
               Column(
@@ -219,14 +208,21 @@ class _DartstartingState extends State<Dartstarting> {
               Padding(
                 padding: const EdgeInsets.all(30),
                 child: InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Dart2(),
+                          ));
+                    },
                     child: Container(
-                  width: 200,
-                  height: 35,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(17),
-                      border: Border.all(color: Colors.black, width: 2)),
-                  child: Center(child: Text("LET'S START ")),
-                )),
+                      width: 200,
+                      height: 35,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(17),
+                          border: Border.all(color: Colors.black, width: 2)),
+                      child: Center(child: Text("LET'S START ")),
+                    )),
               )
             ],
           ),
