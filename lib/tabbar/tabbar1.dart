@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learningapp/Registerpage1.dart';
+
 import 'package:flutter_learningapp/tabbar/discription.dart';
 import 'package:flutter_learningapp/tabbar/index.dart';
 

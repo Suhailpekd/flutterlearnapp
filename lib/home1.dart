@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_learningapp/tabbar/tabbar1.dart';
 
-import 'package:flutter_learningapp/tabbar/discription.dart';
 import 'package:flutter_learningapp/flutter/flutter1.dart';
 import 'package:flutter_learningapp/tests/tests.dart';
 

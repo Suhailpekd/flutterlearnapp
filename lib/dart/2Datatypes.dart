@@ -43,115 +43,7 @@ class _WhatisdartState extends State<Datatypes> {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(9.0),
-                    child: Container(
-                      decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 252, 251, 251)),
-                      child: Expanded(
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Icon(Icons.arrow_right_outlined),
-                            Expanded(
-                              child: Text(
-                                  style: TextStyle(fontSize: 15),
-                                  "The purpose of Dart programming is to create a frontend user interface for the web and mobile apps."),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(9.0),
-                    child: Container(
-                      decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 252, 251, 251)),
-                      child: Expanded(
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Icon(Icons.arrow_right_outlined),
-                            Expanded(
-                              child: Text(
-                                  style: TextStyle(fontSize: 15),
-                                  "Dart is a C-style syntax programing language developed by Google in 2011."),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(9.0),
-                    child: Container(
-                      decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 252, 251, 251)),
-                      child: Expanded(
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Icon(Icons.arrow_right_outlined),
-                            Expanded(
-                              child: Text(
-                                  style: TextStyle(fontSize: 15),
-                                  "inspired by other programming languages such as Java, JavaScript, C#, "),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding:
-                        const EdgeInsets.only(left: 20, top: 20, bottom: 10),
-                    child: Text(
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                      "Advantages Of Dart ",
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(9.0),
-                    child: Container(
-                      decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 252, 251, 251)),
-                      child: Expanded(
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Icon(Icons.arrow_right_outlined),
-                            Expanded(
-                              child: Text(
-                                  style: TextStyle(fontSize: 15),
-                                  "Understandable Sintex "),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(9.0),
-                    child: Container(
-                      decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 252, 251, 251)),
-                      child: Expanded(
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Icon(Icons.arrow_right_outlined),
-                            Expanded(
-                              child: Text(
-                                  style: TextStyle(fontSize: 15),
-                                  "Quick loading Code"),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
+
                   Padding(
                     padding: const EdgeInsets.all(9.0),
                     child: Container(
@@ -292,6 +184,25 @@ class _WhatisdartState extends State<Datatypes> {
                       ),
                     ),
                   ),
+
+//button>
+
+                  InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => Datatypes(),
+                            ));
+                      },
+                      child: Container(
+                        width: 89,
+                        height: 35,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(17),
+                            border: Border.all(color: Colors.black, width: 2)),
+                        child: Center(child: Text("NEXT")),
+                      )),
                 ],
               ),
             ),

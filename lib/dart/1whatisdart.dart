@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learningapp/dart/2Datatypes.dart';
+
 import 'package:google_fonts/google_fonts.dart';
 
 class Whatisdart extends StatefulWidget {
@@ -9,6 +11,28 @@ class Whatisdart extends StatefulWidget {
 }
 
 class _WhatisdartState extends State<Whatisdart> {
+  var a = "";
+  var b = "";
+  var c = "";
+
+  void change() {
+    setState(() {
+      a = "The purpose of Dart programming is to create a frontend user interface for the web and mobile apps.";
+    });
+  }
+
+  void change2() {
+    setState(() {
+      b = "Dart is a C-style syntax programing language developed by Google in 2011.";
+    });
+  }
+
+  void change3() {
+    setState(() {
+      c = "inspired by other programming languages such as Java, JavaScript, C#, ";
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,251 +69,298 @@ class _WhatisdartState extends State<Whatisdart> {
                   ),
                   Padding(
                     padding: const EdgeInsets.all(9.0),
-                    child: Container(
-                      decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 252, 251, 251)),
-                      child: Expanded(
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Icon(Icons.arrow_right_outlined),
-                            Expanded(
-                              child: Text(
-                                  style: TextStyle(fontSize: 15),
-                                  "The purpose of Dart programming is to create a frontend user interface for the web and mobile apps."),
-                            ),
-                          ],
+                    child: InkWell(
+                      onTap: () {
+                        setState(() {
+                          change();
+                        });
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 252, 251, 251)),
+                        child: Expanded(
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Icon(Icons.arrow_right_outlined),
+                              Expanded(
+                                child:
+                                    Text(style: TextStyle(fontSize: 15), "$a"),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(9.0),
-                    child: Container(
-                      decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 252, 251, 251)),
-                      child: Expanded(
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Icon(Icons.arrow_right_outlined),
-                            Expanded(
-                              child: Text(
-                                  style: TextStyle(fontSize: 15),
-                                  "Dart is a C-style syntax programing language developed by Google in 2011."),
-                            ),
-                          ],
+                    child: InkWell(
+                      onTap: () {
+                        change2();
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 252, 251, 251)),
+                        child: Expanded(
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Icon(Icons.arrow_right_outlined),
+                              Expanded(
+                                child: Text(style: TextStyle(fontSize: 15), b),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(9.0),
-                    child: Container(
-                      decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 252, 251, 251)),
-                      child: Expanded(
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Icon(Icons.arrow_right_outlined),
-                            Expanded(
-                              child: Text(
-                                  style: TextStyle(fontSize: 15),
-                                  "inspired by other programming languages such as Java, JavaScript, C#, "),
-                            ),
-                          ],
+                    child: InkWell(
+                      onTap: () {
+                        setState(() {
+                          change3();
+                        });
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 252, 251, 251)),
+                        child: Expanded(
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Icon(Icons.arrow_right_outlined),
+                              Expanded(
+                                child: Text(style: TextStyle(fontSize: 15), c),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
                   ),
+                  // Padding(
+                  //   padding:
+                  //       const EdgeInsets.only(left: 20, top: 20, bottom: 10),
+                  //   child: Text(
+                  //     style:
+                  //         TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                  //     "Advantages Of Dart ",
+                  //   ),
+                  // ),
+                  // Padding(
+                  //   padding: const EdgeInsets.all(9.0),
+                  //   child: Container(
+                  //     decoration: BoxDecoration(
+                  //         color: const Color.fromARGB(255, 252, 251, 251)),
+                  //     child: Expanded(
+                  //       child: Row(
+                  //         crossAxisAlignment: CrossAxisAlignment.start,
+                  //         children: [
+                  //           Icon(Icons.arrow_right_outlined),
+                  //           Expanded(
+                  //             child: Text(
+                  //                 style: TextStyle(fontSize: 15),
+                  //                 "Understandable Sintex "),
+                  //           ),
+                  //         ],
+                  //       ),
+                  //     ),
+                  //   ),
+                  // ),
+                  // Padding(
+                  //   padding: const EdgeInsets.all(9.0),
+                  //   child: Container(
+                  //     decoration: BoxDecoration(
+                  //         color: const Color.fromARGB(255, 252, 251, 251)),
+                  //     child: Expanded(
+                  //       child: Row(
+                  //         crossAxisAlignment: CrossAxisAlignment.start,
+                  //         children: [
+                  //           Icon(Icons.arrow_right_outlined),
+                  //           Expanded(
+                  //             child: Text(
+                  //                 style: TextStyle(fontSize: 15),
+                  //                 "Quick loading Code"),
+                  //           ),
+                  //         ],
+                  //       ),
+                  //     ),
+                  //   ),
+                  // ),
+                  // Padding(
+                  //   padding: const EdgeInsets.all(9.0),
+                  //   child: Container(
+                  //     decoration: BoxDecoration(
+                  //         color: const Color.fromARGB(255, 252, 251, 251)),
+                  //     child: Expanded(
+                  //       child: Row(
+                  //         crossAxisAlignment: CrossAxisAlignment.start,
+                  //         children: [
+                  //           Icon(Icons.arrow_right_outlined),
+                  //           Expanded(
+                  //             child: Text(
+                  //                 style: TextStyle(fontSize: 15),
+                  //                 "Fast Garbage Collector"),
+                  //           ),
+                  //         ],
+                  //       ),
+                  //     ),
+                  //   ),
+                  // ),
+                  // Padding(
+                  //   padding: const EdgeInsets.all(9.0),
+                  //   child: Container(
+                  //     decoration: BoxDecoration(
+                  //         color: const Color.fromARGB(255, 252, 251, 251)),
+                  //     child: Expanded(
+                  //       child: Row(
+                  //         crossAxisAlignment: CrossAxisAlignment.start,
+                  //         children: [
+                  //           Icon(Icons.arrow_right_outlined),
+                  //           Expanded(
+                  //             child: Text(
+                  //                 style: TextStyle(fontSize: 15),
+                  //                 "Belonging to Google"),
+                  //           ),
+                  //         ],
+                  //       ),
+                  //     ),
+                  //   ),
+                  // ),
+                  // Padding(
+                  //   padding: const EdgeInsets.all(9.0),
+                  //   child: Container(
+                  //     decoration: BoxDecoration(
+                  //         color: const Color.fromARGB(255, 252, 251, 251)),
+                  //     child: Expanded(
+                  //       child: Row(
+                  //         crossAxisAlignment: CrossAxisAlignment.start,
+                  //         children: [
+                  //           Icon(Icons.arrow_right_outlined),
+                  //           Expanded(
+                  //             child: Text(
+                  //                 style: TextStyle(fontSize: 15),
+                  //                 "Free and Open Source "),
+                  //           ),
+                  //         ],
+                  //       ),
+                  //     ),
+                  //   ),
+                  // ),
+                  // Padding(
+                  //   padding: const EdgeInsets.all(9.0),
+                  //   child: Container(
+                  //     decoration: BoxDecoration(
+                  //         color: const Color.fromARGB(255, 252, 251, 251)),
+                  //     child: Expanded(
+                  //       child: Row(
+                  //         crossAxisAlignment: CrossAxisAlignment.start,
+                  //         children: [
+                  //           Icon(Icons.arrow_right_outlined),
+                  //           Expanded(
+                  //             child: Text(
+                  //                 style: TextStyle(fontSize: 15),
+                  //                 "High performance factor"),
+                  //           ),
+                  //         ],
+                  //       ),
+                  //     ),
+                  //   ),
+                  // ),
+                  // Padding(
+                  //   padding: const EdgeInsets.all(9.0),
+                  //   child: Container(
+                  //     decoration: BoxDecoration(
+                  //         color: const Color.fromARGB(255, 252, 251, 251)),
+                  //     child: Expanded(
+                  //       child: Row(
+                  //         crossAxisAlignment: CrossAxisAlignment.start,
+                  //         children: [
+                  //           Icon(Icons.arrow_right_outlined),
+                  //           Expanded(
+                  //             child: Text(
+                  //                 style: TextStyle(fontSize: 15),
+                  //                 "More type-safe than Javascript"),
+                  //           ),
+                  //         ],
+                  //       ),
+                  //     ),
+                  //   ),
+                  // ),
+                  // Padding(
+                  //   padding: const EdgeInsets.all(9.0),
+                  //   child: Container(
+                  //     decoration: BoxDecoration(
+                  //         color: const Color.fromARGB(255, 252, 251, 251)),
+                  //     child: Expanded(
+                  //       child: Row(
+                  //         crossAxisAlignment: CrossAxisAlignment.start,
+                  //         children: [
+                  //           Icon(Icons.arrow_right_outlined),
+                  //           Expanded(
+                  //             child: Text(
+                  //                 style: TextStyle(fontSize: 15),
+                  //                 "Can write the first program without installation or configuration"),
+                  //           ),
+                  //         ],
+                  //       ),
+                  //     ),
+                  //   ),
+                  // ),
+                  // Padding(
+                  //   padding: const EdgeInsets.all(9.0),
+                  //   child: Container(
+                  //     decoration: BoxDecoration(
+                  //         color: const Color.fromARGB(255, 252, 251, 251)),
+                  //     child: Expanded(
+                  //       child: Row(
+                  //         crossAxisAlignment: CrossAxisAlignment.start,
+                  //         children: [
+                  //           Icon(Icons.arrow_right_outlined),
+                  //           Expanded(
+                  //             child: Text(
+                  //                 style: TextStyle(fontSize: 15),
+                  //                 "No need for any specific hardware configurations or architecture for running Dart,"),
+                  //           ),
+                  //         ],
+                  //       ),
+                  //     ),
+                  //   ),
+                  // ),
+
+//button>
+
                   Padding(
-                    padding:
-                        const EdgeInsets.only(left: 20, top: 20, bottom: 10),
-                    child: Text(
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                      "Advantages Of Dart ",
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(9.0),
-                    child: Container(
-                      decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 252, 251, 251)),
-                      child: Expanded(
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Icon(Icons.arrow_right_outlined),
-                            Expanded(
-                              child: Text(
-                                  style: TextStyle(fontSize: 15),
-                                  "Understandable Sintex "),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(9.0),
-                    child: Container(
-                      decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 252, 251, 251)),
-                      child: Expanded(
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Icon(Icons.arrow_right_outlined),
-                            Expanded(
-                              child: Text(
-                                  style: TextStyle(fontSize: 15),
-                                  "Quick loading Code"),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(9.0),
-                    child: Container(
-                      decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 252, 251, 251)),
-                      child: Expanded(
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Icon(Icons.arrow_right_outlined),
-                            Expanded(
-                              child: Text(
-                                  style: TextStyle(fontSize: 15),
-                                  "Fast Garbage Collector"),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(9.0),
-                    child: Container(
-                      decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 252, 251, 251)),
-                      child: Expanded(
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Icon(Icons.arrow_right_outlined),
-                            Expanded(
-                              child: Text(
-                                  style: TextStyle(fontSize: 15),
-                                  "Belonging to Google"),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(9.0),
-                    child: Container(
-                      decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 252, 251, 251)),
-                      child: Expanded(
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Icon(Icons.arrow_right_outlined),
-                            Expanded(
-                              child: Text(
-                                  style: TextStyle(fontSize: 15),
-                                  "Free and Open Source "),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(9.0),
-                    child: Container(
-                      decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 252, 251, 251)),
-                      child: Expanded(
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Icon(Icons.arrow_right_outlined),
-                            Expanded(
-                              child: Text(
-                                  style: TextStyle(fontSize: 15),
-                                  "High performance factor"),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(9.0),
-                    child: Container(
-                      decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 252, 251, 251)),
-                      child: Expanded(
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Icon(Icons.arrow_right_outlined),
-                            Expanded(
-                              child: Text(
-                                  style: TextStyle(fontSize: 15),
-                                  "More type-safe than Javascript"),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(9.0),
-                    child: Container(
-                      decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 252, 251, 251)),
-                      child: Expanded(
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Icon(Icons.arrow_right_outlined),
-                            Expanded(
-                              child: Text(
-                                  style: TextStyle(fontSize: 15),
-                                  "Can write the first program without installation or configuration"),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(9.0),
-                    child: Container(
-                      decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 252, 251, 251)),
-                      child: Expanded(
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Icon(Icons.arrow_right_outlined),
-                            Expanded(
-                              child: Text(
-                                  style: TextStyle(fontSize: 15),
-                                  "No need for any specific hardware configurations or architecture for running Dart,"),
-                            ),
-                          ],
-                        ),
-                      ),
+                    padding: const EdgeInsets.only(right: 44, top: 22),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => Datatypes(),
+                                  ));
+                            },
+                            child: Container(
+                              width: 89,
+                              height: 45,
+                              decoration: BoxDecoration(
+                                  color: Colors.transparent,
+                                  borderRadius: BorderRadius.circular(17),
+                                  border: Border.all(
+                                      color: Colors.black, width: 2)),
+                              child: Center(
+                                  child: Text(
+                                "NEXT",
+                                style: GoogleFonts.labrada(fontSize: 14),
+                              )),
+                            )),
+                      ],
                     ),
                   ),
                 ],
