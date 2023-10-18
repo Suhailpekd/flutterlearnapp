@@ -16,24 +16,11 @@ class _DartstartingState extends State<Flutterstarting> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Container(
-                height: 50,
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 25, top: 12),
-                      child: Container(
-                          height: 37,
-                          width: 37,
-                          child: Image.asset("asset/flutter-removebg.png")),
-                    ),
-                  ],
-                ),
-              ),
-
               Column(
                 children: [
+                  SizedBox(
+                    height: 12,
+                  ),
                   Container(
                     decoration: BoxDecoration(
                       color: Color.fromARGB(255, 255, 255, 255),

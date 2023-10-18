@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_learningapp/tabbar/tabbar1.dart';
 
 import 'package:flutter_learningapp/flutter/flutter1.dart';
-import 'package:flutter_learningapp/tests/tests.dart';
+import 'package:flutter_learningapp/tabbar/tabbarflutter.dart';
+import 'package:flutter_learningapp/tests/testsindex.dart';
 
 class Home1 extends StatefulWidget {
   const Home1({super.key});
@@ -12,71 +13,19 @@ class Home1 extends StatefulWidget {
 }
 
 class _Home1State extends State<Home1> {
-  var selectedindex = 0;
-  var widgetoptions = [Home1(), Text('data'), Text("ooo")];
-  void change(int index) {
-    setState(() {
-      selectedindex = index;
-      print(selectedindex);
-    });
-  }
+  // var selectedindex = 0;
+  // var widgetoptions = [Home1(), Text('data'), Text("ooo")];
+  // void change(int index) {
+  //   setState(() {
+  //     selectedindex = index;
+  //     print(selectedindex);
+  //   });
+  // }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
       backgroundColor: Color.fromRGBO(255, 255, 255, 1),
-      drawer: Expanded(
-        child: Drawer(
-          backgroundColor: Colors.white,
-          child: ListView(children: [
-            DrawerHeader(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(left: 15),
-                    child: Text("Welcome.", softWrap: mounted),
-                  ),
-                  Expanded(
-                    child: Row(
-                      children: [
-                        CircleAvatar(
-                          radius: 35,
-                          backgroundImage:
-                              AssetImage("asset/flutter-removebg.png"),
-                          backgroundColor: Colors.white,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Expanded(child: Text("Suhail*****@gmail.com"))
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            ListTile(
-              onTap: () {
-                change(0);
-                Navigator.pop(context);
-              },
-              title: Text("1"),
-            ),
-            Divider(),
-            ListTile(
-                onTap: () {
-                  change(1);
-                  Navigator.pop(context);
-                },
-                title: Text("2")),
-            Divider(),
-            ListTile(onTap: () => change(2), title: Text("2")),
-            Divider()
-          ]),
-        ),
-      ),
       body: Padding(
         padding:
             const EdgeInsets.only(left: 18.0, right: 18, top: 10, bottom: 10),
@@ -159,7 +108,7 @@ class _Home1State extends State<Home1> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => Flutterstarting(),
+                              builder: (context) => Flutter2(),
                             ));
                       },
                       child: Container(
@@ -223,7 +172,7 @@ class _Home1State extends State<Home1> {
                         Navigator.push(
                           (context),
                           MaterialPageRoute(
-                            builder: (context) => Tests1(),
+                            builder: (context) => Indextests(),
                           ),
                         );
                       },

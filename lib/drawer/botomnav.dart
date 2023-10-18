@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learningapp/dart/conditionalstatements.dart';
+import 'package:flutter_learningapp/dart/variebles.dart';
 import 'package:flutter_learningapp/home1.dart';
 
 class Navig extends StatefulWidget {
@@ -10,46 +12,57 @@ class Navig extends StatefulWidget {
 
 class _NavigState extends State<Navig> {
   var selectedindex = 0;
-  var list1 = [Home1(), Text(''), Text(''), Text('')];
+
   void navigat(int index) {
     setState(() {
       selectedindex = index;
     });
   }
 
+  var list1 = [Home1(), Text(''), Text(''), Text('')];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
-//  drawer: Drawer(
-//           backgroundColor: Colors.white,
-//           child: Padding(
-//             padding: const EdgeInsets.only(left: 19, right: 19),
-//             child: ListView(children: [
-//               DrawerHeader(
-//                 child: Text("Welcome"),
-//               ),
-//               ListTile(
-//                 onTap: () {
-//                   change(0);
-//                   Navigator.pop(context);
-//                 },
-//                 title: Text("1"),
-//               ),
-//               Divider(),
-//               ListTile(
-//                   onTap: () {
-//                     change(1);
-//                     Navigator.pop(context);
-//                   },
-//                   title: Text("2")),
-//               Divider(),
-//               ListTile(onTap: () => change(2), title: Text("2")),
-//               Divider()
-//             ]),
-//           ),
-//         ),
-
+        appBar: AppBar(),
+        drawer: Drawer(
+          backgroundColor: Color.fromARGB(255, 252, 252, 252),
+          child: Padding(
+            padding: const EdgeInsets.only(left: 19, right: 19),
+            child: ListView(children: [
+              DrawerHeader(
+                child: Text("Welcome"),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Variebles(),
+                      ));
+                },
+                title: Text("1"),
+              ),
+              Divider(),
+              ListTile(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => Conditionalstatements()));
+                  },
+                  title: Text("2")),
+              Divider(),
+              ListTile(
+                  onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Variebles(),
+                      )),
+                  title: Text("2")),
+              Divider()
+            ]),
+          ),
+        ),
         body: Center(
           child: list1.elementAt(selectedindex),
         ),

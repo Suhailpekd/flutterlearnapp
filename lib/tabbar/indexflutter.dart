@@ -8,14 +8,14 @@ import 'package:flutter_learningapp/dart/looping_statements.dart';
 import 'package:flutter_learningapp/dart/oops.dart';
 import 'package:flutter_learningapp/dart/variebles.dart';
 
-class Indexdart extends StatefulWidget {
-  const Indexdart({super.key});
+class Indexflutter extends StatefulWidget {
+  const Indexflutter({super.key});
 
   @override
-  State<Indexdart> createState() => _IndexdartState();
+  State<Indexflutter> createState() => _IndexdartState();
 }
 
-class _IndexdartState extends State<Indexdart> {
+class _IndexdartState extends State<Indexflutter> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,7 +38,7 @@ class _IndexdartState extends State<Indexdart> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " 1) What is dart ?",
+                        " 1) What is flutter ?",
                         style: TextStyle(
                             fontWeight: FontWeight.bold, color: Colors.black),
                       ),
@@ -368,6 +368,7 @@ class _IndexdartState extends State<Indexdart> {
               ),
             ),
           ),
+
           SizedBox(
             height: 28,
           )

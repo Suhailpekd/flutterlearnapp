@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learningapp/botomnav.dart';
+import 'package:flutter_learningapp/drawer/botomnav.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Registerpage1 extends StatefulWidget {
