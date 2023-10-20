@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_learningapp/dart/conditionalstatements.dart';
+import 'package:flutter_learningapp/dart/functions.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Variebles extends StatefulWidget {
@@ -256,38 +257,6 @@ class _WhatisdartState extends State<Variebles> {
                     ),
 
                     //button>
-
-                    Padding(
-                      padding: const EdgeInsets.only(right: 44, top: 22),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: [
-                          InkWell(
-                              onTap: () {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) =>
-                                          Conditionalstatements(),
-                                    ));
-                              },
-                              child: Container(
-                                width: 89,
-                                height: 45,
-                                decoration: BoxDecoration(
-                                    color: Colors.transparent,
-                                    borderRadius: BorderRadius.circular(17),
-                                    border: Border.all(
-                                        color: Colors.black, width: 2)),
-                                child: Center(
-                                    child: Text(
-                                  "NEXT",
-                                  style: GoogleFonts.labrada(fontSize: 14),
-                                )),
-                              )),
-                        ],
-                      ),
-                    ),
                   ],
                 ),
               ),
@@ -299,65 +268,133 @@ class _WhatisdartState extends State<Variebles> {
               ),
               child: Stack(
                 children: [
-                  Container(
-                    height: 200,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(12),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Color.fromARGB(255, 234, 227, 236),
-                            blurRadius: 8,
-                            spreadRadius: 5,
-                          )
-                        ],
-                        gradient: LinearGradient(colors: [
-                          Color.fromARGB(255, 255, 255, 255),
-                          Color.fromARGB(255, 54, 6, 175)
-                        ])),
-                    child: Expanded(
-                        child: Padding(
-                      padding:
-                          const EdgeInsets.only(top: 50, bottom: 50, right: 20),
-                      child: Expanded(
-                        child: Row(
-                          children: [
-                            Expanded(
-                              child: SizedBox(
-                                height: 90,
-                                child: Image.asset(
-                                  "asset/birddart.png",
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        height: 200,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(12),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Color.fromARGB(255, 234, 227, 236),
+                                blurRadius: 8,
+                                spreadRadius: 5,
+                              )
+                            ],
+                            gradient: LinearGradient(colors: [
+                              Color.fromARGB(255, 255, 255, 255),
+                              Color.fromARGB(255, 54, 6, 175)
+                            ])),
+                        child: Expanded(
+                            child: Padding(
+                          padding: const EdgeInsets.only(
+                              top: 50, bottom: 50, right: 20),
+                          child: Expanded(
+                            child: Row(
+                              children: [
+                                Expanded(
+                                  child: SizedBox(
+                                    height: 90,
+                                    child: Image.asset(
+                                      "asset/birddart.png",
+                                    ),
+                                  ),
                                 ),
-                              ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(top: 2),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Expanded(
-                                    child: SizedBox(
-                                      height: 56,
-                                      width: 56,
-                                      child: Image.asset(
-                                          "asset/Screenshot_2023-10-17_115046-removebg-preview.png"),
-                                    ),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 2),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Expanded(
+                                        child: SizedBox(
+                                          height: 56,
+                                          width: 56,
+                                          child: Image.asset(
+                                              "asset/Screenshot_2023-10-17_115046-removebg-preview.png"),
+                                        ),
+                                      ),
+                                      Text(
+                                        "VARIEBLES",
+                                        selectionColor: Colors.amber,
+                                        style: GoogleFonts.almarai(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 24,
+                                        ),
+                                      ),
+                                    ],
                                   ),
-                                  Text(
-                                    "VARIEBLES",
-                                    selectionColor: Colors.amber,
-                                    style: GoogleFonts.almarai(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 24,
-                                    ),
-                                  ),
-                                ],
-                              ),
+                                ),
+                              ],
                             ),
-                          ],
-                        ),
+                          ),
+                        )),
                       ),
-                    )),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Column(
+                            // crossAxisAlignment: CrossAxisAlignment.end,
+                            children: [
+                              InkWell(
+                                  onTap: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => Functions(),
+                                        ));
+                                  },
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(bottom: 18),
+                                    child: Container(
+                                        width: 45,
+                                        height: 45,
+                                        decoration: BoxDecoration(
+                                          color:
+                                              Color.fromARGB(255, 116, 24, 182),
+                                          borderRadius:
+                                              BorderRadius.circular(50),
+                                        ),
+                                        child: Center(
+                                            child: Icon(
+                                          Icons.home,
+                                          size: 25,
+                                          color: Color.fromARGB(
+                                              255, 255, 255, 255),
+                                        ))),
+                                  )),
+                              InkWell(
+                                  onTap: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => Functions(),
+                                        ));
+                                  },
+                                  child: Center(
+                                      child: Container(
+                                    height: 45,
+                                    width: 45,
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(50),
+                                        color:
+                                            Color.fromARGB(255, 119, 6, 175)),
+                                    child: Icon(
+                                      Icons.arrow_forward_ios,
+                                      size: 25,
+                                      color: Color.fromARGB(255, 255, 255, 255),
+                                    ),
+                                  ))),
+                              SizedBox(
+                                height: 13,
+                              )
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
                 ],
               ),
