@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_learningapp/dart/2Datatypes.dart';
 import 'package:flutter_learningapp/classes/cls2.dart';
+import 'package:flutter_learningapp/flutter/radio_buttons.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Buttons1 extends StatefulWidget {
@@ -356,21 +357,13 @@ class _WhatisdartState extends State<Buttons1> {
                                       height: 25,
                                     ),
                                     Text(
-                                      "FLUTTER ",
+                                      "BUTTONS ",
                                       selectionColor: Colors.amber,
                                       style: GoogleFonts.almarai(
                                         color: Colors.white,
                                         fontWeight: FontWeight.bold,
                                         fontSize: 24,
                                       ),
-                                    ),
-                                    Text(
-                                      "INDRODUCTION ",
-                                      selectionColor: Colors.amber,
-                                      style: GoogleFonts.almarai(
-                                          color: Colors.white,
-                                          fontSize: 24,
-                                          fontWeight: FontWeight.bold),
                                     ),
                                   ],
                                 ),
@@ -420,7 +413,7 @@ class _WhatisdartState extends State<Buttons1> {
                                     Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => Datatypes(),
+                                          builder: (context) => Radiobuttons1(),
                                         ));
                                   },
                                   child: Center(

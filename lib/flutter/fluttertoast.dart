@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_learningapp/classes/cls.dart';
-import 'package:flutter_learningapp/dart/2Datatypes.dart';
+
 import 'package:flutter_learningapp/classes/cls2.dart';
 import 'package:flutter_learningapp/flutter/stack.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Inkwell1 extends StatefulWidget {
-  const Inkwell1({super.key});
+class Fluttertoast1 extends StatefulWidget {
+  const Fluttertoast1({super.key});
 
   @override
-  State<Inkwell1> createState() => _WhatisdartState();
+  State<Fluttertoast1> createState() => _WhatisdartState();
 }
 
-class _WhatisdartState extends State<Inkwell1> {
+class _WhatisdartState extends State<Fluttertoast1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +40,8 @@ class _WhatisdartState extends State<Inkwell1> {
                               Icon(Icons.arrow_right_outlined),
                               Expanded(
                                 child: Text(
-                                    style: TextStyle(fontSize: 15), "Inkwell1"),
+                                    style: TextStyle(fontSize: 15),
+                                    "Fluttertoast1"),
                               ),
                             ],
                           ),
@@ -358,7 +359,7 @@ class _WhatisdartState extends State<Inkwell1> {
                                       height: 25,
                                     ),
                                     Text(
-                                      "Ink Well And ",
+                                      "Toast And",
                                       selectionColor: Colors.amber,
                                       style: GoogleFonts.almarai(
                                         color: Colors.white,
@@ -367,7 +368,7 @@ class _WhatisdartState extends State<Inkwell1> {
                                       ),
                                     ),
                                     Text(
-                                      "Proerties ",
+                                      "Snack ",
                                       selectionColor: Colors.amber,
                                       style: GoogleFonts.almarai(
                                           color: Colors.white,
@@ -391,28 +392,28 @@ class _WhatisdartState extends State<Inkwell1> {
                             // crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
                               Home_button(),
-                              InkWell(
-                                  onTap: () {
-                                    Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) => Stack1(),
-                                        ));
-                                  },
-                                  child: Center(
-                                      child: Container(
-                                    height: 45,
-                                    width: 45,
-                                    decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(50),
-                                        color:
-                                            Color.fromARGB(255, 119, 6, 175)),
-                                    child: Icon(
-                                      Icons.arrow_forward_ios,
-                                      size: 25,
-                                      color: Color.fromARGB(255, 255, 255, 255),
-                                    ),
-                                  ))),
+                              // InkWell(
+                              //     onTap: () {
+                              //       Navigator.push(
+                              //           context,
+                              //           MaterialPageRoute(
+                              //             builder: (context) => Drawerandnav1(),
+                              //           ));
+                              //     },
+                              //     child: Center(
+                              //         child: Container(
+                              //       height: 45,
+                              //       width: 45,
+                              //       decoration: BoxDecoration(
+                              //           borderRadius: BorderRadius.circular(50),
+                              //           color:
+                              //               Color.fromARGB(255, 119, 6, 175)),
+                              //       child: Icon(
+                              //         Icons.arrow_forward_ios,
+                              //         size: 25,
+                              //         color: Color.fromARGB(255, 255, 255, 255),
+                              //       ),
+                              //     ))),
                               SizedBox(
                                 height: 13,
                               )
