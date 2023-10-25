@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learningapp/classes/cls.dart';
 import 'package:flutter_learningapp/dart/2Datatypes.dart';
 import 'package:flutter_learningapp/classes/cls2.dart';
+import 'package:flutter_learningapp/flutter/introduction_to_widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Whatisflutter extends StatefulWidget {
@@ -48,12 +50,7 @@ class _WhatisdartState extends State<Whatisflutter> {
                     ),
                     Padding(
                       padding: const EdgeInsets.all(9.0),
-                      // child: InkWell(
-                      //   onTap: () {
-                      //     setState(() {
-                      //       change();
-                      //     });
-                      //   },
+
                       child: Container(
                         decoration: BoxDecoration(
                             color: const Color.fromARGB(255, 252, 251, 251)),
@@ -75,10 +72,7 @@ class _WhatisdartState extends State<Whatisflutter> {
                     ),
                     Padding(
                       padding: const EdgeInsets.all(9.0),
-                      // child: InkWell(
-                      //   onTap: () {
-                      //     change2();
-                      //   },
+
                       child: Container(
                         decoration: BoxDecoration(
                             color: const Color.fromARGB(255, 252, 251, 251)),
@@ -90,7 +84,7 @@ class _WhatisdartState extends State<Whatisflutter> {
                               Expanded(
                                 child: Text(
                                     style: TextStyle(fontSize: 15),
-                                    "Dart is a C-style syntax programing language developed by Google in 2011."),
+                                    "Flutter uses a reactive programming language called Dart, making development faster and easier than traditional methods"),
                               ),
                             ],
                           ),
@@ -100,12 +94,7 @@ class _WhatisdartState extends State<Whatisflutter> {
                     ),
                     Padding(
                       padding: const EdgeInsets.all(9.0),
-                      // child: InkWell(
-                      //   onTap: () {
-                      //     setState(() {
-                      //       change3();
-                      //     });
-                      //   },
+
                       child: Container(
                         decoration: BoxDecoration(
                             color: const Color.fromARGB(255, 252, 251, 251)),
@@ -117,7 +106,7 @@ class _WhatisdartState extends State<Whatisflutter> {
                               Expanded(
                                 child: Text(
                                     style: TextStyle(fontSize: 15),
-                                    "inspired by other programming languages such as Java, JavaScript, C#, "),
+                                    "Flutter transforms the entire app development process. Build, test, and deploy beautiful mobile, web, desktop, and embedded apps from a single codebase."),
                               ),
                             ],
                           ),
@@ -131,7 +120,7 @@ class _WhatisdartState extends State<Whatisflutter> {
                       child: Text(
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 16),
-                        "Advantages Of Dart ",
+                        "Advantages Of Flutter ",
                       ),
                     ),
                     Padding(
@@ -147,7 +136,7 @@ class _WhatisdartState extends State<Whatisflutter> {
                               Expanded(
                                 child: Text(
                                     style: TextStyle(fontSize: 15),
-                                    "Understandable Sintex "),
+                                    "Beautiful User Interfaces. "),
                               ),
                             ],
                           ),
@@ -187,7 +176,7 @@ class _WhatisdartState extends State<Whatisflutter> {
                               Expanded(
                                 child: Text(
                                     style: TextStyle(fontSize: 15),
-                                    "Fast Garbage Collector"),
+                                    "Cross-Platform Development. "),
                               ),
                             ],
                           ),
@@ -207,7 +196,7 @@ class _WhatisdartState extends State<Whatisflutter> {
                               Expanded(
                                 child: Text(
                                     style: TextStyle(fontSize: 15),
-                                    "Belonging to Google"),
+                                    "Cross-Platform Development. "),
                               ),
                             ],
                           ),
@@ -227,7 +216,7 @@ class _WhatisdartState extends State<Whatisflutter> {
                               Expanded(
                                 child: Text(
                                     style: TextStyle(fontSize: 15),
-                                    "Free and Open Source "),
+                                    "Open-Source."),
                               ),
                             ],
                           ),
@@ -267,7 +256,7 @@ class _WhatisdartState extends State<Whatisflutter> {
                               Expanded(
                                 child: Text(
                                     style: TextStyle(fontSize: 15),
-                                    "More type-safe than Javascript"),
+                                    "developers can easily iterate on their apps and see changes in real-time."),
                               ),
                             ],
                           ),
@@ -287,7 +276,7 @@ class _WhatisdartState extends State<Whatisflutter> {
                               Expanded(
                                 child: Text(
                                     style: TextStyle(fontSize: 15),
-                                    "Can write the first program without installation or configuration"),
+                                    "You can use it to build apps for Android, iOS, web, and desktop from a single codebase."),
                               ),
                             ],
                           ),
@@ -307,7 +296,7 @@ class _WhatisdartState extends State<Whatisflutter> {
                               Expanded(
                                 child: Text(
                                     style: TextStyle(fontSize: 15),
-                                    "No need for any specific hardware configurations or architecture for running Dart,"),
+                                    "you can modify or customize widgets with ease."),
                               ),
                             ],
                           ),
@@ -332,10 +321,6 @@ class _WhatisdartState extends State<Whatisflutter> {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      // Container(
-                      //   height: 35,
-                      //   color: Colors.white,
-                      // ),
                       Container(
                         height: 200,
                         decoration: BoxDecoration(
@@ -389,48 +374,21 @@ class _WhatisdartState extends State<Whatisflutter> {
                           ),
                         )),
                       ),
-                      // SizedBox(
-                      //   height: 300,
-                      // ),
+
+//buttons
+
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
                           Column(
-                            // crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
+                              Home_button(),
                               InkWell(
                                   onTap: () {
                                     Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => Datatypes(),
-                                        ));
-                                  },
-                                  child: Padding(
-                                    padding: const EdgeInsets.only(bottom: 18),
-                                    child: Container(
-                                        width: 45,
-                                        height: 45,
-                                        decoration: BoxDecoration(
-                                          color:
-                                              Color.fromARGB(255, 116, 24, 182),
-                                          borderRadius:
-                                              BorderRadius.circular(50),
-                                        ),
-                                        child: Center(
-                                            child: Icon(
-                                          Icons.home,
-                                          size: 25,
-                                          color: Color.fromARGB(
-                                              255, 255, 255, 255),
-                                        ))),
-                                  )),
-                              InkWell(
-                                  onTap: () {
-                                    Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) => Datatypes(),
+                                          builder: (context) => Indro_widgets(),
                                         ));
                                   },
                                   child: Center(

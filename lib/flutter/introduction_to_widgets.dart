@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learningapp/classes/cls.dart';
 import 'package:flutter_learningapp/dart/2Datatypes.dart';
 import 'package:flutter_learningapp/classes/cls2.dart';
+import 'package:flutter_learningapp/flutter/rows_columns.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Indro_widgets extends StatefulWidget {
@@ -48,12 +50,7 @@ class _WhatisdartState extends State<Indro_widgets> {
                     ),
                     Padding(
                       padding: const EdgeInsets.all(9.0),
-                      // child: InkWell(
-                      //   onTap: () {
-                      //     setState(() {
-                      //       change();
-                      //     });
-                      //   },
+
                       child: Container(
                         decoration: BoxDecoration(
                             color: const Color.fromARGB(255, 252, 251, 251)),
@@ -100,12 +97,7 @@ class _WhatisdartState extends State<Indro_widgets> {
                     ),
                     Padding(
                       padding: const EdgeInsets.all(9.0),
-                      // child: InkWell(
-                      //   onTap: () {
-                      //     setState(() {
-                      //       change3();
-                      //     });
-                      //   },
+
                       child: Container(
                         decoration: BoxDecoration(
                             color: const Color.fromARGB(255, 252, 251, 251)),
@@ -293,10 +285,6 @@ class _WhatisdartState extends State<Indro_widgets> {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      // Container(
-                      //   height: 35,
-                      //   color: Colors.white,
-                      // ),
                       Container(
                         height: 200,
                         decoration: BoxDecoration(
@@ -357,41 +345,14 @@ class _WhatisdartState extends State<Indro_widgets> {
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
                           Column(
-                            // crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
+                              Home_button(),
                               InkWell(
                                   onTap: () {
                                     Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => Datatypes(),
-                                        ));
-                                  },
-                                  child: Padding(
-                                    padding: const EdgeInsets.only(bottom: 18),
-                                    child: Container(
-                                        width: 45,
-                                        height: 45,
-                                        decoration: BoxDecoration(
-                                          color:
-                                              Color.fromARGB(255, 116, 24, 182),
-                                          borderRadius:
-                                              BorderRadius.circular(50),
-                                        ),
-                                        child: Center(
-                                            child: Icon(
-                                          Icons.home,
-                                          size: 25,
-                                          color: Color.fromARGB(
-                                              255, 255, 255, 255),
-                                        ))),
-                                  )),
-                              InkWell(
-                                  onTap: () {
-                                    Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) => Datatypes(),
+                                          builder: (context) => Rows_columns(),
                                         ));
                                   },
                                   child: Center(

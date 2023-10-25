@@ -5,6 +5,8 @@ import 'package:google_fonts/google_fonts.dart';
 class Registerpage1 extends StatefulWidget {
   const Registerpage1({super.key});
 
+  
+
   @override
   State<Registerpage1> createState() => _Registerpage1State();
 }
@@ -16,7 +18,7 @@ class _Registerpage1State extends State<Registerpage1> {
       backgroundColor: Color(0xFF7F00FF),
       body: Column(
         children: [
-          SizedBox(
+             SizedBox(
             height: 108,
           ),
           Padding(

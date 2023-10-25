@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learningapp/classes/cls.dart';
 import 'package:flutter_learningapp/dart/2Datatypes.dart';
 import 'package:flutter_learningapp/classes/cls2.dart';
+import 'package:flutter_learningapp/flutter/text_form_field.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Rows_columns extends StatefulWidget {
@@ -366,7 +368,7 @@ class _WhatisdartState extends State<Rows_columns> {
                                       height: 25,
                                     ),
                                     Text(
-                                      "FLUTTER ",
+                                      "Rows And ",
                                       selectionColor: Colors.amber,
                                       style: GoogleFonts.almarai(
                                         color: Colors.white,
@@ -375,7 +377,7 @@ class _WhatisdartState extends State<Rows_columns> {
                                       ),
                                     ),
                                     Text(
-                                      "INDRODUCTION ",
+                                      "Coloumns ",
                                       selectionColor: Colors.amber,
                                       style: GoogleFonts.almarai(
                                           color: Colors.white,
@@ -398,39 +400,14 @@ class _WhatisdartState extends State<Rows_columns> {
                           Column(
                             // crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
+                              Home_button(),
                               InkWell(
                                   onTap: () {
                                     Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => Datatypes(),
-                                        ));
-                                  },
-                                  child: Padding(
-                                    padding: const EdgeInsets.only(bottom: 18),
-                                    child: Container(
-                                        width: 45,
-                                        height: 45,
-                                        decoration: BoxDecoration(
-                                          color:
-                                              Color.fromARGB(255, 116, 24, 182),
-                                          borderRadius:
-                                              BorderRadius.circular(50),
-                                        ),
-                                        child: Center(
-                                            child: Icon(
-                                          Icons.home,
-                                          size: 25,
-                                          color: Color.fromARGB(
-                                              255, 255, 255, 255),
-                                        ))),
-                                  )),
-                              InkWell(
-                                  onTap: () {
-                                    Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) => Datatypes(),
+                                          builder: (context) =>
+                                              Textformfield1(),
                                         ));
                                   },
                                   child: Center(
