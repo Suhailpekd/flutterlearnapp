@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learningapp/tabbar/tabbarflutter.dart';
 
 class Flutterstarting extends StatefulWidget {
   const Flutterstarting({super.key});
@@ -264,14 +265,21 @@ class _DartstartingState extends State<Flutterstarting> {
               Padding(
                 padding: const EdgeInsets.all(30),
                 child: InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Tabbarflutter2(),
+                          ));
+                    },
                     child: Container(
-                  width: 200,
-                  height: 35,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(17),
-                      border: Border.all(color: Colors.black, width: 2)),
-                  child: Center(child: Text("LET'S START ")),
-                )),
+                      width: 200,
+                      height: 35,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(17),
+                          border: Border.all(color: Colors.black, width: 2)),
+                      child: Center(child: Text("LET'S START ")),
+                    )),
               )
             ],
           ),

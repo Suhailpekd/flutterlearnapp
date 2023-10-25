@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learningapp/dart/1whatisdart.dart';
-import 'package:flutter_learningapp/dart/2Datatypes.dart';
 import 'package:flutter_learningapp/dart/class_and_objects.dart';
-import 'package:flutter_learningapp/dart/conditionalstatements.dart';
-import 'package:flutter_learningapp/dart/functions.dart';
-import 'package:flutter_learningapp/dart/looping_statements.dart';
-import 'package:flutter_learningapp/dart/oops.dart';
-import 'package:flutter_learningapp/dart/variebles.dart';
+import 'package:flutter_learningapp/flutter/Buttons.dart';
+import 'package:flutter_learningapp/flutter/containers_and_its_properties.dart';
+import 'package:flutter_learningapp/flutter/drop_down.dart';
+import 'package:flutter_learningapp/flutter/inkwell.dart';
+import 'package:flutter_learningapp/flutter/introduction_to_widgets.dart';
+import 'package:flutter_learningapp/flutter/navigations.dart';
+import 'package:flutter_learningapp/flutter/radio_buttons.dart';
+import 'package:flutter_learningapp/flutter/rows_columns.dart';
+import 'package:flutter_learningapp/flutter/stack.dart';
+import 'package:flutter_learningapp/flutter/text_form_field.dart';
+import 'package:flutter_learningapp/flutter/validations.dart';
+import 'package:flutter_learningapp/flutter/whatisflutter.dart';
 
 class Indexflutter extends StatefulWidget {
   const Indexflutter({super.key});
@@ -28,7 +33,7 @@ class _IndexdartState extends State<Indexflutter> {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => Whatisdart(),
+                      builder: (context) => Whatisflutter(),
                     ));
               },
               child: Container(
@@ -63,98 +68,13 @@ class _IndexdartState extends State<Indexflutter> {
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 28, right: 28),
-            child: InkWell(
-              onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => Datatypes(),
-                    ));
-              },
-              child: Container(
-                child: Padding(
-                  padding: const EdgeInsets.only(right: 20, left: 20),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        " 2)  Flutter Project Creation",
-                        style: TextStyle(
-                            color: Colors.black, fontWeight: FontWeight.bold),
-                      ),
-                      Icon(Icons.arrow_circle_right,
-                          color: const Color.fromARGB(164, 47, 43, 43))
-                    ],
-                  ),
-                ),
-                height: 60,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      blurStyle: BlurStyle.outer,
-                      color: Color.fromARGB(255, 234, 227, 236),
-                      blurRadius: 8,
-                      spreadRadius: 2,
-                    )
-                  ],
-                  borderRadius: BorderRadius.circular(15),
-                  color: Colors.white,
-                ),
-              ),
-            ),
-          ),
+
           InkWell(
             onTap: () {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Variebles(),
-                  ));
-            },
-            child: Padding(
-              padding: const EdgeInsets.all(28),
-              child: Container(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 20, right: 20),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Expanded(
-                        child: Text(
-                          " 3) Folder structure and Running procedurs",
-                          style: TextStyle(
-                              color: Colors.black, fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                      Icon(Icons.arrow_circle_right,
-                          color: const Color.fromARGB(164, 47, 43, 43))
-                    ],
-                  ),
-                ),
-                height: 60,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      blurStyle: BlurStyle.outer,
-                      color: Color.fromARGB(255, 234, 227, 236),
-                      blurRadius: 8,
-                      spreadRadius: 2,
-                    )
-                  ],
-                  borderRadius: BorderRadius.circular(15),
-                  color: Colors.white,
-                ),
-              ),
-            ),
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => Conditionalstatements(),
+                    builder: (context) => Indro_widgets(),
                   ));
             },
             child: Padding(
@@ -166,7 +86,7 @@ class _IndexdartState extends State<Indexflutter> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " 4) Introduction to widgets",
+                        " 2) Introduction to widgets",
                         style: TextStyle(
                             color: const Color.fromARGB(255, 0, 0, 0),
                             fontWeight: FontWeight.bold),
@@ -199,7 +119,7 @@ class _IndexdartState extends State<Indexflutter> {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Loopingstatements(),
+                    builder: (context) => Contnrs_prprts(),
                   ));
             },
             child: Padding(
@@ -211,7 +131,7 @@ class _IndexdartState extends State<Indexflutter> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " 5) Containers and its properties",
+                        " 3) Containers and its properties",
                         style: TextStyle(
                             color: Colors.black, fontWeight: FontWeight.bold),
                       ),
@@ -239,56 +159,13 @@ class _IndexdartState extends State<Indexflutter> {
 
 //
 
-          InkWell(
-            onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => Functions(),
-                  ));
-            },
-            child: Padding(
-              padding: const EdgeInsets.only(left: 28, right: 28),
-              child: Container(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 20, right: 20),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        " 6) Widgets",
-                        style: TextStyle(
-                            color: Colors.black, fontWeight: FontWeight.bold),
-                      ),
-                      Icon(Icons.arrow_circle_right,
-                          color: const Color.fromARGB(164, 47, 43, 43))
-                    ],
-                  ),
-                ),
-                height: 60,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      blurStyle: BlurStyle.outer,
-                      color: Color.fromARGB(255, 234, 227, 236),
-                      blurRadius: 8,
-                      spreadRadius: 2,
-                    )
-                  ],
-                  borderRadius: BorderRadius.circular(15),
-                  color: Colors.white,
-                ),
-              ),
-            ),
-          ),
-
           //
           InkWell(
             onTap: () {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Oops(),
+                    builder: (context) => Rows_columns(),
                   ));
             },
             child: Padding(
@@ -300,7 +177,7 @@ class _IndexdartState extends State<Indexflutter> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " 7) Rows and Colums Propoerties ",
+                        " 4) Rows and Colums Propoerties ",
                         style: TextStyle(
                             color: Colors.black, fontWeight: FontWeight.bold),
                       ),
@@ -333,7 +210,7 @@ class _IndexdartState extends State<Indexflutter> {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Classandobjects(),
+                    builder: (context) => Textformfield1(),
                   ));
             },
             child: Padding(
@@ -345,7 +222,7 @@ class _IndexdartState extends State<Indexflutter> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " 8) Text Form Field",
+                        " 5) Text Form Field",
                         style: TextStyle(
                             color: Colors.black, fontWeight: FontWeight.bold),
                       ),
@@ -376,7 +253,7 @@ class _IndexdartState extends State<Indexflutter> {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Classandobjects(),
+                    builder: (context) => Buttons1(),
                   ));
             },
             child: Padding(
@@ -419,7 +296,7 @@ class _IndexdartState extends State<Indexflutter> {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Classandobjects(),
+                    builder: (context) => Radiobuttons1(),
                   ));
             },
             child: Padding(
@@ -462,7 +339,7 @@ class _IndexdartState extends State<Indexflutter> {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Classandobjects(),
+                    builder: (context) => Dropdown1(),
                   ));
             },
             child: Padding(
@@ -505,7 +382,7 @@ class _IndexdartState extends State<Indexflutter> {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Classandobjects(),
+                    builder: (context) => Navigations1(),
                   ));
             },
             child: Padding(
@@ -548,7 +425,7 @@ class _IndexdartState extends State<Indexflutter> {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Classandobjects(),
+                    builder: (context) => Validations1(),
                   ));
             },
             child: Padding(
@@ -591,7 +468,7 @@ class _IndexdartState extends State<Indexflutter> {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Classandobjects(),
+                    builder: (context) => Inkwell1(),
                   ));
             },
             child: Padding(
@@ -634,7 +511,7 @@ class _IndexdartState extends State<Indexflutter> {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Classandobjects(),
+                    builder: (context) => Stack1(),
                   ));
             },
             child: Padding(
@@ -935,7 +812,7 @@ class _IndexdartState extends State<Indexflutter> {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Classandobjects(),
+                    builder: (context) => Navigations1(),
                   ));
             },
             child: Padding(

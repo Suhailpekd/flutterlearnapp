@@ -30,8 +30,30 @@ class _NavigState extends State<Navig> {
             padding: const EdgeInsets.only(left: 19, right: 19),
             child: ListView(children: [
               DrawerHeader(
-                child: Text("Welcome"),
+                child: Column(
+                  children: [
+                    Container(
+                        height: 70,
+                        width: 90,
+                        decoration: BoxDecoration(
+                            color: Colors.blue,
+                            borderRadius: BorderRadius.circular(50)),
+                        child: Column(
+                          children: [
+                            Center(child: Text("Welcome")),
+                          ],
+                        )),
+                  ],
+                ),
               ),
+              ListTile(
+                  onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Variebles(),
+                      )),
+                  title: Text("Profile")),
+              Divider(),
               ListTile(
                 onTap: () {
                   Navigator.push(
@@ -40,7 +62,7 @@ class _NavigState extends State<Navig> {
                         builder: (context) => Variebles(),
                       ));
                 },
-                title: Text("1"),
+                title: Text("Review"),
               ),
               Divider(),
               ListTile(
@@ -50,7 +72,7 @@ class _NavigState extends State<Navig> {
                         MaterialPageRoute(
                             builder: (context) => Conditionalstatements()));
                   },
-                  title: Text("2")),
+                  title: Text("About")),
               Divider(),
               ListTile(
                   onTap: () => Navigator.push(
@@ -58,7 +80,7 @@ class _NavigState extends State<Navig> {
                       MaterialPageRoute(
                         builder: (context) => Variebles(),
                       )),
-                  title: Text("2")),
+                  title: Text("Log Out")),
               Divider()
             ]),
           ),

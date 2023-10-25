@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learningapp/classes/cls.dart';
 import 'package:flutter_learningapp/dart/variebles.dart';
-
+import 'package:flutter_learningapp/classes/cls2.dart';
+import 'package:flutter_learningapp/classes/flutterimageclass.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Datatypes extends StatefulWidget {
@@ -311,14 +313,7 @@ class _WhatisdartState extends State<Datatypes> {
                 child: Expanded(
                   child: Row(
                     children: [
-                      Expanded(
-                        child: SizedBox(
-                          height: 90,
-                          child: Image.asset(
-                            "asset/birddart.png",
-                          ),
-                        ),
-                      ),
+                      Flutturimage(),
                       Padding(
                         padding: const EdgeInsets.only(top: 2),
                         child: Column(
@@ -350,36 +345,13 @@ class _WhatisdartState extends State<Datatypes> {
                 Column(
                   // crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
+                    Home_button(),
                     InkWell(
                         onTap: () {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => Datatypes(),
-                              ));
-                        },
-                        child: Padding(
-                          padding: const EdgeInsets.only(bottom: 18),
-                          child: Container(
-                              width: 45,
-                              height: 45,
-                              decoration: BoxDecoration(
-                                color: Color.fromARGB(255, 116, 24, 182),
-                                borderRadius: BorderRadius.circular(50),
-                              ),
-                              child: Center(
-                                  child: Icon(
-                                Icons.home,
-                                size: 25,
-                                color: Color.fromARGB(255, 255, 255, 255),
-                              ))),
-                        )),
-                    InkWell(
-                        onTap: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => Datatypes(),
+                                builder: (context) => Variebles(),
                               ));
                         },
                         child: Center(

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_learningapp/dart/looping_statements.dart';
 import 'package:flutter_learningapp/drawer/botomnav.dart';
 import 'package:flutter_learningapp/home1.dart';
+import 'package:flutter_learningapp/classes/cls2.dart';
+import 'package:flutter_learningapp/classes/flutterimageclass.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Conditionalstatements extends StatefulWidget {
@@ -209,14 +211,7 @@ class _WhatisdartState extends State<Conditionalstatements> {
                           child: Expanded(
                             child: Row(
                               children: [
-                                Expanded(
-                                  child: SizedBox(
-                                    height: 90,
-                                    child: Image.asset(
-                                      "asset/birddart.png",
-                                    ),
-                                  ),
-                                ),
+                                Flutturimage(),
                                 Padding(
                                   padding: const EdgeInsets.only(top: 34),
                                   child: Column(

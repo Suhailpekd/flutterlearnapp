@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learningapp/dart/class_and_objects.dart';
-import 'package:flutter_learningapp/drawer/botomnav.dart';
+import 'package:flutter_learningapp/dart/2Datatypes.dart';
+import 'package:flutter_learningapp/classes/cls2.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Oops extends StatefulWidget {
-  const Oops({super.key});
+class Contnrs_prprts extends StatefulWidget {
+  const Contnrs_prprts({super.key});
 
   @override
-  State<Oops> createState() => _WhatisdartState();
+  State<Contnrs_prprts> createState() => _WhatisdartState();
 }
 
-class _WhatisdartState extends State<Oops> {
+class _WhatisdartState extends State<Contnrs_prprts> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,10 +24,196 @@ class _WhatisdartState extends State<Oops> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(
-                      height: 200,
+                      height: 225,
                     ),
-
-                    //def
+                    Padding(
+                      padding: const EdgeInsets.all(9.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 252, 251, 251)),
+                        child: Expanded(
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Icon(Icons.arrow_right_outlined),
+                              Expanded(
+                                child: Text(
+                                    style: TextStyle(fontSize: 15),
+                                    "INDRODUCTION to widgets"),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(9.0),
+                      // child: InkWell(
+                      //   onTap: () {
+                      //     setState(() {
+                      //       change();
+                      //     });
+                      //   },
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 252, 251, 251)),
+                        child: Expanded(
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Icon(Icons.arrow_right_outlined),
+                              Expanded(
+                                child: Text(
+                                    style: TextStyle(fontSize: 15),
+                                    "Flutter is powered by Dart, a language optimized for fast apps on any platform"),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                      // ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(9.0),
+                      // child: InkWell(
+                      //   onTap: () {
+                      //     change2();
+                      //   },
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 252, 251, 251)),
+                        child: Expanded(
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Icon(Icons.arrow_right_outlined),
+                              Expanded(
+                                child: Text(
+                                    style: TextStyle(fontSize: 15),
+                                    "Dart is a C-style syntax programing language developed by Google in 2011."),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      // ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(9.0),
+                      // child: InkWell(
+                      //   onTap: () {
+                      //     setState(() {
+                      //       change3();
+                      //     });
+                      //   },
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 252, 251, 251)),
+                        child: Expanded(
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Icon(Icons.arrow_right_outlined),
+                              Expanded(
+                                child: Text(
+                                    style: TextStyle(fontSize: 15),
+                                    "inspired by other programming languages such as Java, JavaScript, C#, "),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      // ),
+                    ),
+                    Padding(
+                      padding:
+                          const EdgeInsets.only(left: 20, top: 20, bottom: 10),
+                      child: Text(
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 16),
+                        "Advantages Of Dart ",
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(9.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 252, 251, 251)),
+                        child: Expanded(
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Icon(Icons.arrow_right_outlined),
+                              Expanded(
+                                child: Text(
+                                    style: TextStyle(fontSize: 15),
+                                    "Understandable Sintex "),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(9.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 252, 251, 251)),
+                        child: Expanded(
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Icon(Icons.arrow_right_outlined),
+                              Expanded(
+                                child: Text(
+                                    style: TextStyle(fontSize: 15),
+                                    "Quick loading Code"),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(9.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 252, 251, 251)),
+                        child: Expanded(
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Icon(Icons.arrow_right_outlined),
+                              Expanded(
+                                child: Text(
+                                    style: TextStyle(fontSize: 15),
+                                    "Fast Garbage Collector"),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(9.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 252, 251, 251)),
+                        child: Expanded(
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Icon(Icons.arrow_right_outlined),
+                              Expanded(
+                                child: Text(
+                                    style: TextStyle(fontSize: 15),
+                                    "Belonging to Google"),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
 
                     Padding(
                       padding: const EdgeInsets.all(9.0),
@@ -40,24 +226,15 @@ class _WhatisdartState extends State<Oops> {
                             children: [
                               Icon(Icons.arrow_right_outlined),
                               Expanded(
-                                  child: Text(
-                                      style: TextStyle(fontSize: 15),
-                                      "Dart is an object-oriented programming language, and it supports all the concepts of object-oriented programming such as classes, object, inheritance, mixin, and abstract classes. As the name suggests, it focuses on the object and objects are the real-life entities. The Object-oriented programming approach is used to implement concepts like polymorphism, data-hiding, etc. The main goal of oops is to reduce programming complexity and do several tasks simultaneously. The oops concepts are given below."))
+                                child: Text(
+                                    style: TextStyle(fontSize: 15),
+                                    "More type-safe than Javascript"),
+                              ),
                             ],
                           ),
                         ),
                       ),
                     ),
-                    Padding(
-                      padding:
-                          const EdgeInsets.only(left: 20, top: 20, bottom: 10),
-                      child: Text(
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 16),
-                        "Class",
-                      ),
-                    ),
-
                     Padding(
                       padding: const EdgeInsets.all(9.0),
                       child: Container(
@@ -69,25 +246,15 @@ class _WhatisdartState extends State<Oops> {
                             children: [
                               Icon(Icons.arrow_right_outlined),
                               Expanded(
-                                  child: Text(
-                                      style: TextStyle(fontSize: 15),
-                                      "Dart classes are defined as the blueprint of the associated objects. A Class is a user-defined data type that describes the characteristics and behavior of it. To get all properties of the class, we must create an object of that class. The syntax of the class is given below."))
+                                child: Text(
+                                    style: TextStyle(fontSize: 15),
+                                    "Can write the first program without installation or configuration"),
+                              ),
                             ],
                           ),
                         ),
                       ),
                     ),
-
-                    Padding(
-                      padding:
-                          const EdgeInsets.only(left: 20, top: 20, bottom: 10),
-                      child: Text(
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 16),
-                        "Object",
-                      ),
-                    ),
-
                     Padding(
                       padding: const EdgeInsets.all(9.0),
                       child: Container(
@@ -99,131 +266,18 @@ class _WhatisdartState extends State<Oops> {
                             children: [
                               Icon(Icons.arrow_right_outlined),
                               Expanded(
-                                  child: Text(
-                                      style: TextStyle(fontSize: 15),
-                                      "An object is a real-life entity such as a table, human, car, etc. The object has two characteristics - state and behaviour. Let's take an example of a car which has a name, model name, price and behaviour moving, stopping, etc. The object-oriented programming offers to identify the state and behaviour of the object. We can access the class properties by creating an object of that class. In Dart, The object can be created by using a new keyword followed by class name. The syntax is given below"))
+                                child: Text(
+                                    style: TextStyle(fontSize: 15),
+                                    "No need for any specific hardware configurations or architecture for running Dart,"),
+                              ),
                             ],
                           ),
                         ),
                       ),
                     ),
-
-                    Padding(
-                      padding:
-                          const EdgeInsets.only(left: 20, top: 20, bottom: 10),
-                      child: Text(
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 16),
-                        "Class",
-                      ),
-                    ),
-
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Icon(Icons.arrow_right_outlined),
-                              Expanded(
-                                  child: Text(
-                                      style: TextStyle(fontSize: 15),
-                                      "Dart classes are defined as the blueprint of the associated objects. A Class is a user-defined data type that describes the characteristics and behavior of it. To get all properties of the class, we must create an object of that class. The syntax of the class is given below."))
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-
-                    Padding(
-                      padding:
-                          const EdgeInsets.only(left: 20, top: 20, bottom: 10),
-                      child: Text(
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 16),
-                        "Inheritance",
-                      ),
-                    ),
-
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Icon(Icons.arrow_right_outlined),
-                              Expanded(
-                                  child: Text(
-                                      style: TextStyle(fontSize: 15),
-                                      "Dart supports inheritance, which is used to create new classes from an existing class. The class that is to be extended is called parent /superclass, and the newly created class is called child/subclass. Dart provides extended keywords to inherit the properties of parent class in child class. The syntax is given below."))
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-
-                    Padding(
-                      padding:
-                          const EdgeInsets.only(left: 20, top: 20, bottom: 10),
-                      child: Text(
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 16),
-                        "Polymorphism",
-                      ),
-                    ),
-
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
-                          child: Row(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Icon(Icons.arrow_right_outlined),
-                                Expanded(
-                                    child: Text(
-                                        style: TextStyle(fontSize: 15),
-                                        "Polymorphism is an object-oriented programming concept where one thing has many forms. There can be two types - Runtime polymorphism and Compile time polymorphism. For example - A function has the same name but with a different behaviour or class. Another example is the shape() class, and all the class inherited from the Rectangle, Triangle, and circle."))
-                              ]),
-                        ),
-                      ),
-                    ),
-
-                    Padding(
-                      padding:
-                          const EdgeInsets.only(left: 20, top: 20, bottom: 10),
-                      child: Text(
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 16),
-                        "Abstract Class",
-                      ),
-                    ),
-
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                          decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 252, 251, 251)),
-                          child: Expanded(
-                            child: Row(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Icon(Icons.arrow_right_outlined),
-                                  Expanded(
-                                      child: Text(
-                                          style: TextStyle(fontSize: 15),
-                                          "A class that contains one or more abstract methods is called an abstract class. We can declare the abstract class using the abstract keyword followed by class declaration. The syntax is given below"))
-                                ]),
-                          )),
-                    ),
+                    SizedBox(
+                      height: 45,
+                    )
                     //button>
                   ],
                 ),
@@ -239,6 +293,10 @@ class _WhatisdartState extends State<Oops> {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
+                      // Container(
+                      //   height: 35,
+                      //   color: Colors.white,
+                      // ),
                       Container(
                         height: 200,
                         decoration: BoxDecoration(
@@ -261,40 +319,40 @@ class _WhatisdartState extends State<Oops> {
                           child: Expanded(
                             child: Row(
                               children: [
-                                Expanded(
-                                  child: SizedBox(
-                                    height: 90,
-                                    child: Image.asset(
-                                      "asset/birddart.png",
+                                Flutterbird(),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    SizedBox(
+                                      height: 25,
                                     ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding:
-                                      const EdgeInsets.only(top: 34, right: 30),
-                                  child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Expanded(
-                                        child: Text(
-                                          "OOPS",
-                                          selectionColor: Colors.amber,
-                                          style: GoogleFonts.almarai(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 24,
-                                          ),
-                                        ),
+                                    Text(
+                                      "INDRODUCTION ",
+                                      selectionColor: Colors.amber,
+                                      style: GoogleFonts.almarai(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 24,
                                       ),
-                                    ],
-                                  ),
+                                    ),
+                                    Text(
+                                      "TO WIDGETS",
+                                      selectionColor: Colors.amber,
+                                      style: GoogleFonts.almarai(
+                                          color: Colors.white,
+                                          fontSize: 24,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ],
                                 ),
                               ],
                             ),
                           ),
                         )),
                       ),
+                      // SizedBox(
+                      //   height: 300,
+                      // ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
@@ -306,7 +364,7 @@ class _WhatisdartState extends State<Oops> {
                                     Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => Navig(),
+                                          builder: (context) => Datatypes(),
                                         ));
                                   },
                                   child: Padding(
@@ -333,8 +391,7 @@ class _WhatisdartState extends State<Oops> {
                                     Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) =>
-                                              Classandobjects(),
+                                          builder: (context) => Datatypes(),
                                         ));
                                   },
                                   child: Center(

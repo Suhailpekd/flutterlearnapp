@@ -11,15 +11,6 @@ class Home1 extends StatefulWidget {
 }
 
 class _Home1State extends State<Home1> {
-  // var selectedindex = 0;
-  // var widgetoptions = [Home1(), Text('data'), Text("ooo")];
-  // void change(int index) {
-  //   setState(() {
-  //     selectedindex = index;
-  //     print(selectedindex);
-  //   });
-  // }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -106,7 +97,7 @@ class _Home1State extends State<Home1> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => Flutter2(),
+                              builder: (context) => Tabbarflutter2(),
                             ));
                       },
                       child: Container(

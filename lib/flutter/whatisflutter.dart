@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learningapp/classes/cls.dart';
-import 'package:flutter_learningapp/dart/functions.dart';
-import 'package:flutter_learningapp/drawer/botomnav.dart';
+import 'package:flutter_learningapp/dart/2Datatypes.dart';
 import 'package:flutter_learningapp/classes/cls2.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Loopingstatements extends StatefulWidget {
-  const Loopingstatements({super.key});
+class Whatisflutter extends StatefulWidget {
+  const Whatisflutter({super.key});
 
   @override
-  State<Loopingstatements> createState() => _WhatisdartState();
+  State<Whatisflutter> createState() => _WhatisdartState();
 }
 
-class _WhatisdartState extends State<Loopingstatements> {
+class _WhatisdartState extends State<Whatisflutter> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,9 +26,6 @@ class _WhatisdartState extends State<Loopingstatements> {
                     SizedBox(
                       height: 225,
                     ),
-
-                    //def
-
                     Padding(
                       padding: const EdgeInsets.all(9.0),
                       child: Container(
@@ -42,31 +37,9 @@ class _WhatisdartState extends State<Loopingstatements> {
                             children: [
                               Icon(Icons.arrow_right_outlined),
                               Expanded(
-                                  child: Text(
-                                      style: TextStyle(fontSize: 15),
-                                      "A looping statement in Dart or any other programming language is used to repeat a particular set of commands until certain conditions are not completed. There are different ways to do so. They are:")),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          left: 35, right: 9, bottom: 9, top: 15),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Icon(
-                                Icons.square_foot,
-                                size: 17,
-                              ),
-                              Expanded(
                                 child: Text(
-                                    style: TextStyle(fontSize: 15), "for loop"),
+                                    style: TextStyle(fontSize: 15),
+                                    "Flutter is an open source framework by Google for building beautiful, natively compiled, multi-platform applications from a single codebase."),
                               ),
                             ],
                           ),
@@ -74,8 +47,13 @@ class _WhatisdartState extends State<Loopingstatements> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(
-                          left: 35, right: 9, bottom: 9, top: 15),
+                      padding: const EdgeInsets.all(9.0),
+                      // child: InkWell(
+                      //   onTap: () {
+                      //     setState(() {
+                      //       change();
+                      //     });
+                      //   },
                       child: Container(
                         decoration: BoxDecoration(
                             color: const Color.fromARGB(255, 252, 251, 251)),
@@ -83,23 +61,24 @@ class _WhatisdartState extends State<Loopingstatements> {
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Icon(
-                                Icons.square_foot,
-                                size: 17,
-                              ),
+                              Icon(Icons.arrow_right_outlined),
                               Expanded(
                                 child: Text(
                                     style: TextStyle(fontSize: 15),
-                                    "while loop"),
-                              ),
+                                    "Flutter is powered by Dart, a language optimized for fast apps on any platform"),
+                              )
                             ],
                           ),
                         ),
                       ),
+                      // ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(
-                          left: 35, right: 9, bottom: 9, top: 15),
+                      padding: const EdgeInsets.all(9.0),
+                      // child: InkWell(
+                      //   onTap: () {
+                      //     change2();
+                      //   },
                       child: Container(
                         decoration: BoxDecoration(
                             color: const Color.fromARGB(255, 252, 251, 251)),
@@ -107,19 +86,44 @@ class _WhatisdartState extends State<Loopingstatements> {
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Icon(
-                                Icons.square_foot,
-                                size: 17,
-                              ),
+                              Icon(Icons.arrow_right_outlined),
                               Expanded(
                                 child: Text(
                                     style: TextStyle(fontSize: 15),
-                                    "do while loop"),
+                                    "Dart is a C-style syntax programing language developed by Google in 2011."),
                               ),
                             ],
                           ),
                         ),
                       ),
+                      // ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(9.0),
+                      // child: InkWell(
+                      //   onTap: () {
+                      //     setState(() {
+                      //       change3();
+                      //     });
+                      //   },
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 252, 251, 251)),
+                        child: Expanded(
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Icon(Icons.arrow_right_outlined),
+                              Expanded(
+                                child: Text(
+                                    style: TextStyle(fontSize: 15),
+                                    "inspired by other programming languages such as Java, JavaScript, C#, "),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      // ),
                     ),
                     Padding(
                       padding:
@@ -127,10 +131,9 @@ class _WhatisdartState extends State<Loopingstatements> {
                       child: Text(
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 16),
-                        "FOR LOOP",
+                        "Advantages Of Dart ",
                       ),
                     ),
-
                     Padding(
                       padding: const EdgeInsets.all(9.0),
                       child: Container(
@@ -144,54 +147,13 @@ class _WhatisdartState extends State<Loopingstatements> {
                               Expanded(
                                 child: Text(
                                     style: TextStyle(fontSize: 15),
-                                    "For loop in Dart is similar to that in Java and also the flow of execution is the same as that in Java."),
+                                    "Understandable Sintex "),
                               ),
                             ],
                           ),
                         ),
                       ),
                     ),
-
-                    Padding(
-                      padding:
-                          const EdgeInsets.only(left: 20, top: 20, bottom: 10),
-                      child: Text(
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 16),
-                        "WHILE LOOP",
-                      ),
-                    ),
-
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Icon(Icons.arrow_right_outlined),
-                              Expanded(
-                                  child: Text(
-                                      style: TextStyle(fontSize: 15),
-                                      "The body of the loop will run until and unless the condition is true.")),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-
-                    Padding(
-                      padding:
-                          const EdgeInsets.only(left: 20, top: 20, bottom: 10),
-                      child: Text(
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 16),
-                        "DO WHILE",
-                      ),
-                    ),
-
                     Padding(
                       padding: const EdgeInsets.all(9.0),
                       child: Container(
@@ -205,24 +167,13 @@ class _WhatisdartState extends State<Loopingstatements> {
                               Expanded(
                                 child: Text(
                                     style: TextStyle(fontSize: 15),
-                                    "The body of the loop will be executed first and then the condition is tested."),
+                                    "Quick loading Code"),
                               ),
                             ],
                           ),
                         ),
                       ),
                     ),
-
-                    Padding(
-                      padding:
-                          const EdgeInsets.only(left: 20, top: 20, bottom: 10),
-                      child: Text(
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 16),
-                        "FOR LOOP",
-                      ),
-                    ),
-
                     Padding(
                       padding: const EdgeInsets.all(9.0),
                       child: Container(
@@ -236,13 +187,136 @@ class _WhatisdartState extends State<Loopingstatements> {
                               Expanded(
                                 child: Text(
                                     style: TextStyle(fontSize: 15),
-                                    "For loop in Dart is similar to that in Java and also the flow of execution is the same as that in Java."),
+                                    "Fast Garbage Collector"),
                               ),
                             ],
                           ),
                         ),
                       ),
                     ),
+                    Padding(
+                      padding: const EdgeInsets.all(9.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 252, 251, 251)),
+                        child: Expanded(
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Icon(Icons.arrow_right_outlined),
+                              Expanded(
+                                child: Text(
+                                    style: TextStyle(fontSize: 15),
+                                    "Belonging to Google"),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(9.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 252, 251, 251)),
+                        child: Expanded(
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Icon(Icons.arrow_right_outlined),
+                              Expanded(
+                                child: Text(
+                                    style: TextStyle(fontSize: 15),
+                                    "Free and Open Source "),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(9.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 252, 251, 251)),
+                        child: Expanded(
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Icon(Icons.arrow_right_outlined),
+                              Expanded(
+                                child: Text(
+                                    style: TextStyle(fontSize: 15),
+                                    "High performance factor"),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(9.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 252, 251, 251)),
+                        child: Expanded(
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Icon(Icons.arrow_right_outlined),
+                              Expanded(
+                                child: Text(
+                                    style: TextStyle(fontSize: 15),
+                                    "More type-safe than Javascript"),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(9.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 252, 251, 251)),
+                        child: Expanded(
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Icon(Icons.arrow_right_outlined),
+                              Expanded(
+                                child: Text(
+                                    style: TextStyle(fontSize: 15),
+                                    "Can write the first program without installation or configuration"),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(9.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 252, 251, 251)),
+                        child: Expanded(
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Icon(Icons.arrow_right_outlined),
+                              Expanded(
+                                child: Text(
+                                    style: TextStyle(fontSize: 15),
+                                    "No need for any specific hardware configurations or architecture for running Dart,"),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 45,
+                    )
                     //button>
                   ],
                 ),
@@ -258,6 +332,10 @@ class _WhatisdartState extends State<Loopingstatements> {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
+                      // Container(
+                      //   height: 35,
+                      //   color: Colors.white,
+                      // ),
                       Container(
                         height: 200,
                         decoration: BoxDecoration(
@@ -281,53 +359,78 @@ class _WhatisdartState extends State<Loopingstatements> {
                             child: Row(
                               children: [
                                 Flutterbird(),
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 34),
-                                  child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Expanded(
-                                        child: Text(
-                                          "LOOPING",
-                                          selectionColor: Colors.amber,
-                                          style: GoogleFonts.almarai(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 24,
-                                          ),
-                                        ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    SizedBox(
+                                      height: 25,
+                                    ),
+                                    Text(
+                                      "FLUTTER ",
+                                      selectionColor: Colors.amber,
+                                      style: GoogleFonts.almarai(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 24,
                                       ),
-                                      Text(
-                                        "STATEMENTS",
-                                        selectionColor: Colors.amber,
-                                        style: GoogleFonts.almarai(
+                                    ),
+                                    Text(
+                                      "INDRODUCTION ",
+                                      selectionColor: Colors.amber,
+                                      style: GoogleFonts.almarai(
                                           color: Colors.white,
-                                          fontWeight: FontWeight.bold,
                                           fontSize: 24,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ],
                                 ),
                               ],
                             ),
                           ),
                         )),
                       ),
+                      // SizedBox(
+                      //   height: 300,
+                      // ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
                           Column(
                             // crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
-                              Home_button(),
                               InkWell(
                                   onTap: () {
                                     Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => Functions(),
+                                          builder: (context) => Datatypes(),
+                                        ));
+                                  },
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(bottom: 18),
+                                    child: Container(
+                                        width: 45,
+                                        height: 45,
+                                        decoration: BoxDecoration(
+                                          color:
+                                              Color.fromARGB(255, 116, 24, 182),
+                                          borderRadius:
+                                              BorderRadius.circular(50),
+                                        ),
+                                        child: Center(
+                                            child: Icon(
+                                          Icons.home,
+                                          size: 25,
+                                          color: Color.fromARGB(
+                                              255, 255, 255, 255),
+                                        ))),
+                                  )),
+                              InkWell(
+                                  onTap: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => Datatypes(),
                                         ));
                                   },
                                   child: Center(

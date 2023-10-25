@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learningapp/flutter/flutter1.dart';
+import 'package:flutter_learningapp/tabbar/discriptionflutter.dart';
 
-import 'package:flutter_learningapp/tabbar/discription.dart';
-import 'package:flutter_learningapp/tabbar/index.dart';
 import 'package:flutter_learningapp/tabbar/indexflutter.dart';
 
-class Flutter2 extends StatefulWidget {
-  const Flutter2({super.key});
+class Tabbarflutter2 extends StatefulWidget {
+  const Tabbarflutter2({super.key});
 
   @override
-  State<Flutter2> createState() => _Dart2State();
+  State<Tabbarflutter2> createState() => _Dart2State();
 }
 
-class _Dart2State extends State<Flutter2> {
+class _Dart2State extends State<Tabbarflutter2> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_learningapp/dart/conditionalstatements.dart';
 import 'package:flutter_learningapp/dart/functions.dart';
+import 'package:flutter_learningapp/classes/cls2.dart';
+import 'package:flutter_learningapp/classes/flutterimageclass.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Variebles extends StatefulWidget {
@@ -293,28 +295,13 @@ class _WhatisdartState extends State<Variebles> {
                           child: Expanded(
                             child: Row(
                               children: [
-                                Expanded(
-                                  child: SizedBox(
-                                    height: 90,
-                                    child: Image.asset(
-                                      "asset/birddart.png",
-                                    ),
-                                  ),
-                                ),
+                                Flutturimage(),
                                 Padding(
-                                  padding: const EdgeInsets.only(top: 2),
+                                  padding: const EdgeInsets.only(top: 35),
                                   child: Column(
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
-                                      Expanded(
-                                        child: SizedBox(
-                                          height: 56,
-                                          width: 56,
-                                          child: Image.asset(
-                                              "asset/Screenshot_2023-10-17_115046-removebg-preview.png"),
-                                        ),
-                                      ),
                                       Text(
                                         "VARIEBLES",
                                         selectionColor: Colors.amber,
