@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_learningapp/classes/cls.dart';
+import 'package:flutter_learningapp/dart/2Datatypes.dart';
 import 'package:flutter_learningapp/classes/cls2.dart';
-import 'package:flutter_learningapp/flutter/urlluancher.dart';
+import 'package:flutter_learningapp/flutter/Buttons.dart';
+import 'package:flutter_learningapp/flutter/statemanagement_tools1.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Navigationbar1 extends StatefulWidget {
-  const Navigationbar1({super.key});
+class Shared_preference1 extends StatefulWidget {
+  const Shared_preference1({super.key});
 
   @override
-  State<Navigationbar1> createState() => _WhatisdartState();
+  State<Shared_preference1> createState() => _WhatisdartState();
 }
 
-class _WhatisdartState extends State<Navigationbar1> {
+class _WhatisdartState extends State<Shared_preference1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +42,7 @@ class _WhatisdartState extends State<Navigationbar1> {
                               Expanded(
                                 child: Text(
                                     style: TextStyle(fontSize: 15),
-                                    "Navigationbar1"),
+                                    "Text is an open source framework by Google for building beautiful, natively compiled, multi-platform applications from a single codebase."),
                               ),
                             ],
                           ),
@@ -71,6 +73,10 @@ class _WhatisdartState extends State<Navigationbar1> {
                     ),
                     Padding(
                       padding: const EdgeInsets.all(9.0),
+                      // child: InkWell(
+                      //   onTap: () {
+                      //     change2();
+                      //   },
                       child: Container(
                         decoration: BoxDecoration(
                             color: const Color.fromARGB(255, 252, 251, 251)),
@@ -92,6 +98,12 @@ class _WhatisdartState extends State<Navigationbar1> {
                     ),
                     Padding(
                       padding: const EdgeInsets.all(9.0),
+                      // child: InkWell(
+                      //   onTap: () {
+                      //     setState(() {
+                      //       change3();
+                      //     });
+                      //   },
                       child: Container(
                         decoration: BoxDecoration(
                             color: const Color.fromARGB(255, 252, 251, 251)),
@@ -318,6 +330,10 @@ class _WhatisdartState extends State<Navigationbar1> {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
+                      // Container(
+                      //   height: 35,
+                      //   color: Colors.white,
+                      // ),
                       Container(
                         height: 200,
                         decoration: BoxDecoration(
@@ -348,21 +364,13 @@ class _WhatisdartState extends State<Navigationbar1> {
                                       height: 25,
                                     ),
                                     Text(
-                                      "Drawer And ",
+                                      "Shared Preferences",
                                       selectionColor: Colors.amber,
                                       style: GoogleFonts.almarai(
                                         color: Colors.white,
                                         fontWeight: FontWeight.bold,
                                         fontSize: 24,
                                       ),
-                                    ),
-                                    Text(
-                                      "Navigaton Bar",
-                                      selectionColor: Colors.amber,
-                                      style: GoogleFonts.almarai(
-                                          color: Colors.white,
-                                          fontSize: 24,
-                                          fontWeight: FontWeight.bold),
                                     ),
                                   ],
                                 ),
@@ -371,10 +379,14 @@ class _WhatisdartState extends State<Navigationbar1> {
                           ),
                         )),
                       ),
+                      // SizedBox(
+                      //   height: 300,
+                      // ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
                           Column(
+                            // crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
                               Home_button(),
                               InkWell(
@@ -382,7 +394,8 @@ class _WhatisdartState extends State<Navigationbar1> {
                                     Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => Url_luancher1(),
+                                          builder: (context) =>
+                                              Statemanagement_tools1(),
                                         ));
                                   },
                                   child: Center(

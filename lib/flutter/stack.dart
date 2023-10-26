@@ -363,7 +363,7 @@ class _WhatisdartState extends State<Stack1> {
                                       height: 25,
                                     ),
                                     Text(
-                                      "FLUTTER ",
+                                      "Stack With ",
                                       selectionColor: Colors.amber,
                                       style: GoogleFonts.almarai(
                                         color: Colors.white,
@@ -372,7 +372,7 @@ class _WhatisdartState extends State<Stack1> {
                                       ),
                                     ),
                                     Text(
-                                      "INDRODUCTION ",
+                                      "Widgets ",
                                       selectionColor: Colors.amber,
                                       style: GoogleFonts.almarai(
                                           color: Colors.white,

@@ -2,14 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter_learningapp/dart/class_and_objects.dart';
 import 'package:flutter_learningapp/flutter/Buttons.dart';
 import 'package:flutter_learningapp/flutter/containers_and_its_properties.dart';
+import 'package:flutter_learningapp/flutter/dateand_time.dart';
 import 'package:flutter_learningapp/flutter/drop_down.dart';
 import 'package:flutter_learningapp/flutter/inkwell.dart';
 import 'package:flutter_learningapp/flutter/introduction_to_widgets.dart';
+import 'package:flutter_learningapp/flutter/listview_prprtys.dart';
+import 'package:flutter_learningapp/flutter/mediaqueri1.dart';
 import 'package:flutter_learningapp/flutter/navigations.dart';
 import 'package:flutter_learningapp/flutter/radio_buttons.dart';
 import 'package:flutter_learningapp/flutter/rows_columns.dart';
+import 'package:flutter_learningapp/flutter/sharedpreference1.dart';
 import 'package:flutter_learningapp/flutter/stack.dart';
+import 'package:flutter_learningapp/flutter/statemanagement_tools1.dart';
 import 'package:flutter_learningapp/flutter/text_form_field.dart';
+import 'package:flutter_learningapp/flutter/urlluancher.dart';
 import 'package:flutter_learningapp/flutter/validations.dart';
 import 'package:flutter_learningapp/flutter/whatisflutter.dart';
 
@@ -169,7 +175,7 @@ class _IndexdartState extends State<Indexflutter> {
                   ));
             },
             child: Padding(
-              padding: const EdgeInsets.all(28),
+              padding: const EdgeInsets.only(left: 28, right: 28, bottom: 28),
               child: Container(
                 child: Padding(
                   padding: const EdgeInsets.only(left: 20, right: 20),
@@ -265,7 +271,7 @@ class _IndexdartState extends State<Indexflutter> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " 9) Buttons",
+                        " 6) Buttons",
                         style: TextStyle(
                             color: Colors.black, fontWeight: FontWeight.bold),
                       ),
@@ -308,7 +314,7 @@ class _IndexdartState extends State<Indexflutter> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " 10) Radio buttons ",
+                        " 7) Radio buttons ",
                         style: TextStyle(
                             color: Colors.black, fontWeight: FontWeight.bold),
                       ),
@@ -351,7 +357,7 @@ class _IndexdartState extends State<Indexflutter> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " 11) Drop down",
+                        " 8) Drop down",
                         style: TextStyle(
                             color: Colors.black, fontWeight: FontWeight.bold),
                       ),
@@ -394,7 +400,7 @@ class _IndexdartState extends State<Indexflutter> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " 12) Navigations",
+                        " 9) Navigations",
                         style: TextStyle(
                             color: Colors.black, fontWeight: FontWeight.bold),
                       ),
@@ -437,7 +443,7 @@ class _IndexdartState extends State<Indexflutter> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " 13) Validations",
+                        " 10) Validations",
                         style: TextStyle(
                             color: Colors.black, fontWeight: FontWeight.bold),
                       ),
@@ -480,7 +486,7 @@ class _IndexdartState extends State<Indexflutter> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " 14) Inkwell and properties",
+                        " 11) Inkwell and properties",
                         style: TextStyle(
                             color: Colors.black, fontWeight: FontWeight.bold),
                       ),
@@ -523,7 +529,93 @@ class _IndexdartState extends State<Indexflutter> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " 15) Stack With Widgets",
+                        " 12) Stack With Widgets",
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ),
+                      Icon(Icons.arrow_circle_right,
+                          color: const Color.fromARGB(164, 47, 43, 43))
+                    ],
+                  ),
+                ),
+                height: 60,
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      blurStyle: BlurStyle.outer,
+                      color: Color.fromARGB(255, 234, 227, 236),
+                      blurRadius: 8,
+                      spreadRadius: 2,
+                    )
+                  ],
+                  borderRadius: BorderRadius.circular(15),
+                  color: Colors.white,
+                ),
+              ),
+            ),
+          ),
+
+          InkWell(
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Listview1(),
+                  ));
+            },
+            child: Padding(
+              padding: const EdgeInsets.all(28),
+              child: Container(
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 20, right: 20),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        " 13) List View And properties",
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ),
+                      Icon(Icons.arrow_circle_right,
+                          color: const Color.fromARGB(164, 47, 43, 43))
+                    ],
+                  ),
+                ),
+                height: 60,
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      blurStyle: BlurStyle.outer,
+                      color: Color.fromARGB(255, 234, 227, 236),
+                      blurRadius: 8,
+                      spreadRadius: 2,
+                    )
+                  ],
+                  borderRadius: BorderRadius.circular(15),
+                  color: Colors.white,
+                ),
+              ),
+            ),
+          ),
+
+          InkWell(
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Dateandtime1(),
+                  ));
+            },
+            child: Padding(
+              padding: const EdgeInsets.only(left: 28, right: 28),
+              child: Container(
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 20, right: 20),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        " 14) Date Picker and time  Picker",
                         style: TextStyle(
                             color: Colors.black, fontWeight: FontWeight.bold),
                       ),
@@ -566,7 +658,7 @@ class _IndexdartState extends State<Indexflutter> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " 16) List View And properties",
+                        " 15) Flutter toast and Snack bar",
                         style: TextStyle(
                             color: Colors.black, fontWeight: FontWeight.bold),
                       ),
@@ -609,179 +701,7 @@ class _IndexdartState extends State<Indexflutter> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " 17) Divider ",
-                        style: TextStyle(
-                            color: Colors.black, fontWeight: FontWeight.bold),
-                      ),
-                      Icon(Icons.arrow_circle_right,
-                          color: const Color.fromARGB(164, 47, 43, 43))
-                    ],
-                  ),
-                ),
-                height: 60,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      blurStyle: BlurStyle.outer,
-                      color: Color.fromARGB(255, 234, 227, 236),
-                      blurRadius: 8,
-                      spreadRadius: 2,
-                    )
-                  ],
-                  borderRadius: BorderRadius.circular(15),
-                  color: Colors.white,
-                ),
-              ),
-            ),
-          ),
-
-          InkWell(
-            onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => Classandobjects(),
-                  ));
-            },
-            child: Padding(
-              padding: const EdgeInsets.all(28),
-              child: Container(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 20, right: 20),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        " 8) Circle Avathar",
-                        style: TextStyle(
-                            color: Colors.black, fontWeight: FontWeight.bold),
-                      ),
-                      Icon(Icons.arrow_circle_right,
-                          color: const Color.fromARGB(164, 47, 43, 43))
-                    ],
-                  ),
-                ),
-                height: 60,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      blurStyle: BlurStyle.outer,
-                      color: Color.fromARGB(255, 234, 227, 236),
-                      blurRadius: 8,
-                      spreadRadius: 2,
-                    )
-                  ],
-                  borderRadius: BorderRadius.circular(15),
-                  color: Colors.white,
-                ),
-              ),
-            ),
-          ),
-
-          InkWell(
-            onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => Classandobjects(),
-                  ));
-            },
-            child: Padding(
-              padding: const EdgeInsets.only(left: 28, right: 28),
-              child: Container(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 20, right: 20),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        " 18) Date Picker and time  Picker",
-                        style: TextStyle(
-                            color: Colors.black, fontWeight: FontWeight.bold),
-                      ),
-                      Icon(Icons.arrow_circle_right,
-                          color: const Color.fromARGB(164, 47, 43, 43))
-                    ],
-                  ),
-                ),
-                height: 60,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      blurStyle: BlurStyle.outer,
-                      color: Color.fromARGB(255, 234, 227, 236),
-                      blurRadius: 8,
-                      spreadRadius: 2,
-                    )
-                  ],
-                  borderRadius: BorderRadius.circular(15),
-                  color: Colors.white,
-                ),
-              ),
-            ),
-          ),
-
-          InkWell(
-            onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => Classandobjects(),
-                  ));
-            },
-            child: Padding(
-              padding: const EdgeInsets.all(28),
-              child: Container(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 20, right: 20),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        " 19) Flutter toast and Snack bar",
-                        style: TextStyle(
-                            color: Colors.black, fontWeight: FontWeight.bold),
-                      ),
-                      Icon(Icons.arrow_circle_right,
-                          color: const Color.fromARGB(164, 47, 43, 43))
-                    ],
-                  ),
-                ),
-                height: 60,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      blurStyle: BlurStyle.outer,
-                      color: Color.fromARGB(255, 234, 227, 236),
-                      blurRadius: 8,
-                      spreadRadius: 2,
-                    )
-                  ],
-                  borderRadius: BorderRadius.circular(15),
-                  color: Colors.white,
-                ),
-              ),
-            ),
-          ),
-
-          InkWell(
-            onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => Classandobjects(),
-                  ));
-            },
-            child: Padding(
-              padding: const EdgeInsets.only(left: 28, right: 28),
-              child: Container(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 20, right: 20),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        " 20) Drawer",
+                        " 16) Drawer",
                         style: TextStyle(
                             color: Colors.black, fontWeight: FontWeight.bold),
                       ),
@@ -824,7 +744,7 @@ class _IndexdartState extends State<Indexflutter> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " 21) Navigation",
+                        " 17) Navigation",
                         style: TextStyle(
                             color: Colors.black, fontWeight: FontWeight.bold),
                       ),
@@ -855,7 +775,50 @@ class _IndexdartState extends State<Indexflutter> {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Classandobjects(),
+                    builder: (context) => Url_luancher1(),
+                  ));
+            },
+            child: Padding(
+              padding: const EdgeInsets.only(left: 28, right: 28, bottom: 28),
+              child: Container(
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 20, right: 20),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        " 18) Url luancher",
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ),
+                      Icon(Icons.arrow_circle_right,
+                          color: const Color.fromARGB(164, 47, 43, 43))
+                    ],
+                  ),
+                ),
+                height: 60,
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      blurStyle: BlurStyle.outer,
+                      color: Color.fromARGB(255, 234, 227, 236),
+                      blurRadius: 8,
+                      spreadRadius: 2,
+                    )
+                  ],
+                  borderRadius: BorderRadius.circular(15),
+                  color: Colors.white,
+                ),
+              ),
+            ),
+          ),
+
+          InkWell(
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Shared_preference1(),
                   ));
             },
             child: Padding(
@@ -867,7 +830,93 @@ class _IndexdartState extends State<Indexflutter> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " 22) Url luancher",
+                        " 19) Shared Preference",
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ),
+                      Icon(Icons.arrow_circle_right,
+                          color: const Color.fromARGB(164, 47, 43, 43))
+                    ],
+                  ),
+                ),
+                height: 60,
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      blurStyle: BlurStyle.outer,
+                      color: Color.fromARGB(255, 234, 227, 236),
+                      blurRadius: 8,
+                      spreadRadius: 2,
+                    )
+                  ],
+                  borderRadius: BorderRadius.circular(15),
+                  color: Colors.white,
+                ),
+              ),
+            ),
+          ),
+
+          InkWell(
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Statemanagement_tools1(),
+                  ));
+            },
+            child: Padding(
+              padding: const EdgeInsets.all(28),
+              child: Container(
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 20, right: 20),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        " 20) State management Tools",
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ),
+                      Icon(Icons.arrow_circle_right,
+                          color: const Color.fromARGB(164, 47, 43, 43))
+                    ],
+                  ),
+                ),
+                height: 60,
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      blurStyle: BlurStyle.outer,
+                      color: Color.fromARGB(255, 234, 227, 236),
+                      blurRadius: 8,
+                      spreadRadius: 2,
+                    )
+                  ],
+                  borderRadius: BorderRadius.circular(15),
+                  color: Colors.white,
+                ),
+              ),
+            ),
+          ),
+
+          InkWell(
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MediaQuery1(),
+                  ));
+            },
+            child: Padding(
+              padding: const EdgeInsets.only(left: 28, right: 28),
+              child: Container(
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 20, right: 20),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        " 21) Mediaqueri",
                         style: TextStyle(
                             color: Colors.black, fontWeight: FontWeight.bold),
                       ),
@@ -910,179 +959,7 @@ class _IndexdartState extends State<Indexflutter> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " 23) Gps Location",
-                        style: TextStyle(
-                            color: Colors.black, fontWeight: FontWeight.bold),
-                      ),
-                      Icon(Icons.arrow_circle_right,
-                          color: const Color.fromARGB(164, 47, 43, 43))
-                    ],
-                  ),
-                ),
-                height: 60,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      blurStyle: BlurStyle.outer,
-                      color: Color.fromARGB(255, 234, 227, 236),
-                      blurRadius: 8,
-                      spreadRadius: 2,
-                    )
-                  ],
-                  borderRadius: BorderRadius.circular(15),
-                  color: Colors.white,
-                ),
-              ),
-            ),
-          ),
-
-          InkWell(
-            onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => Classandobjects(),
-                  ));
-            },
-            child: Padding(
-              padding: const EdgeInsets.only(left: 28, right: 28),
-              child: Container(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 20, right: 20),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        " 24) Shared Preference",
-                        style: TextStyle(
-                            color: Colors.black, fontWeight: FontWeight.bold),
-                      ),
-                      Icon(Icons.arrow_circle_right,
-                          color: const Color.fromARGB(164, 47, 43, 43))
-                    ],
-                  ),
-                ),
-                height: 60,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      blurStyle: BlurStyle.outer,
-                      color: Color.fromARGB(255, 234, 227, 236),
-                      blurRadius: 8,
-                      spreadRadius: 2,
-                    )
-                  ],
-                  borderRadius: BorderRadius.circular(15),
-                  color: Colors.white,
-                ),
-              ),
-            ),
-          ),
-
-          InkWell(
-            onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => Classandobjects(),
-                  ));
-            },
-            child: Padding(
-              padding: const EdgeInsets.all(28),
-              child: Container(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 20, right: 20),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        " 25) State management Tools",
-                        style: TextStyle(
-                            color: Colors.black, fontWeight: FontWeight.bold),
-                      ),
-                      Icon(Icons.arrow_circle_right,
-                          color: const Color.fromARGB(164, 47, 43, 43))
-                    ],
-                  ),
-                ),
-                height: 60,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      blurStyle: BlurStyle.outer,
-                      color: Color.fromARGB(255, 234, 227, 236),
-                      blurRadius: 8,
-                      spreadRadius: 2,
-                    )
-                  ],
-                  borderRadius: BorderRadius.circular(15),
-                  color: Colors.white,
-                ),
-              ),
-            ),
-          ),
-
-          InkWell(
-            onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => Classandobjects(),
-                  ));
-            },
-            child: Padding(
-              padding: const EdgeInsets.only(left: 28, right: 28),
-              child: Container(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 20, right: 20),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        " 26) Mediaqueri",
-                        style: TextStyle(
-                            color: Colors.black, fontWeight: FontWeight.bold),
-                      ),
-                      Icon(Icons.arrow_circle_right,
-                          color: const Color.fromARGB(164, 47, 43, 43))
-                    ],
-                  ),
-                ),
-                height: 60,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      blurStyle: BlurStyle.outer,
-                      color: Color.fromARGB(255, 234, 227, 236),
-                      blurRadius: 8,
-                      spreadRadius: 2,
-                    )
-                  ],
-                  borderRadius: BorderRadius.circular(15),
-                  color: Colors.white,
-                ),
-              ),
-            ),
-          ),
-
-          InkWell(
-            onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => Classandobjects(),
-                  ));
-            },
-            child: Padding(
-              padding: const EdgeInsets.all(28),
-              child: Container(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 20, right: 20),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        " 28) ",
+                        " 22) Gps Location",
                         style: TextStyle(
                             color: Colors.black, fontWeight: FontWeight.bold),
                       ),

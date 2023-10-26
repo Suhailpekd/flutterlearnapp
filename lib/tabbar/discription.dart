@@ -117,7 +117,8 @@ class _DartstartingState extends State<Dartstarting> {
                         ),
                       ),
                       Expanded(
-                        child: Text('To be comfortable in a flutter.'),
+                        child: Text(
+                            ' Paired with a flexible execution runtime platform for app frameworks.'),
                       )
                     ],
                   ),

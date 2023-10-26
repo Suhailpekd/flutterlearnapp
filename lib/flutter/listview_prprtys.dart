@@ -360,7 +360,7 @@ class _WhatisdartState extends State<Listview1> {
                                       height: 25,
                                     ),
                                     Text(
-                                      "Ink Well And ",
+                                      "List View",
                                       selectionColor: Colors.amber,
                                       style: GoogleFonts.almarai(
                                         color: Colors.white,
@@ -369,7 +369,7 @@ class _WhatisdartState extends State<Listview1> {
                                       ),
                                     ),
                                     Text(
-                                      "Proerties ",
+                                      "And Proerties ",
                                       selectionColor: Colors.amber,
                                       style: GoogleFonts.almarai(
                                           color: Colors.white,

@@ -12,28 +12,6 @@ class Whatisdart extends StatefulWidget {
 }
 
 class _WhatisdartState extends State<Whatisdart> {
-  // var a = "";
-  // var b = "";
-  // var c = "";
-
-  // void change() {
-  //   setState(() {
-  //     a = "The purpose of Dart programming is to create a frontend user interface for the web and mobile apps.";
-  //   });
-  // }
-
-  // void change2() {
-  //   setState(() {
-  //     b = "Dart is a C-style syntax programing language developed by Google in 2011.";
-  //   });
-  // }
-
-  // void change3() {
-  //   setState(() {
-  //     c = "inspired by other programming languages such as Java, JavaScript, C#, ";
-  //   });
-  // }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

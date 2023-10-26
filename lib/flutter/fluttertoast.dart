@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_learningapp/classes/cls.dart';
 
 import 'package:flutter_learningapp/classes/cls2.dart';
+import 'package:flutter_learningapp/flutter/navigationbarflutter.dart';
 import 'package:flutter_learningapp/flutter/stack.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -392,28 +393,28 @@ class _WhatisdartState extends State<Fluttertoast1> {
                             // crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
                               Home_button(),
-                              // InkWell(
-                              //     onTap: () {
-                              //       Navigator.push(
-                              //           context,
-                              //           MaterialPageRoute(
-                              //             builder: (context) => Drawerandnav1(),
-                              //           ));
-                              //     },
-                              //     child: Center(
-                              //         child: Container(
-                              //       height: 45,
-                              //       width: 45,
-                              //       decoration: BoxDecoration(
-                              //           borderRadius: BorderRadius.circular(50),
-                              //           color:
-                              //               Color.fromARGB(255, 119, 6, 175)),
-                              //       child: Icon(
-                              //         Icons.arrow_forward_ios,
-                              //         size: 25,
-                              //         color: Color.fromARGB(255, 255, 255, 255),
-                              //       ),
-                              //     ))),
+                              InkWell(
+                                  onTap: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                Navigationbar1()));
+                                  },
+                                  child: Center(
+                                      child: Container(
+                                    height: 45,
+                                    width: 45,
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(50),
+                                        color:
+                                            Color.fromARGB(255, 119, 6, 175)),
+                                    child: Icon(
+                                      Icons.arrow_forward_ios,
+                                      size: 25,
+                                      color: Color.fromARGB(255, 255, 255, 255),
+                                    ),
+                                  ))),
                               SizedBox(
                                 height: 13,
                               )

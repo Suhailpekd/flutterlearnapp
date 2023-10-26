@@ -390,7 +390,8 @@ class _WhatisdartState extends State<Inkwell1> {
                           Column(
                             // crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
-                              Home_button(),
+                              Home_button(), //home button
+
                               InkWell(
                                   onTap: () {
                                     Navigator.push(

@@ -136,37 +136,6 @@ class _WhatisdartState extends State<Classandobjects> {
                         ),
                       ),
                     ),
-
-                    Padding(
-                      padding: const EdgeInsets.only(right: 44, top: 22),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: [
-                          InkWell(
-                              onTap: () {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) => Navig(),
-                                    ));
-                              },
-                              child: Container(
-                                width: 140,
-                                height: 45,
-                                decoration: BoxDecoration(
-                                    color: Colors.transparent,
-                                    borderRadius: BorderRadius.circular(17),
-                                    border: Border.all(
-                                        color: Colors.black, width: 2)),
-                                child: Center(
-                                    child: Text(
-                                  "DART COMPLETED",
-                                  style: GoogleFonts.labrada(fontSize: 14),
-                                )),
-                              )),
-                        ],
-                      ),
-                    ),
                   ],
                 ),
               ),
