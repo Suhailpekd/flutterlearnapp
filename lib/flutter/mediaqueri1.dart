@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_learningapp/classes/cls.dart';
 import 'package:flutter_learningapp/classes/cls2.dart';
 import 'package:flutter_learningapp/flutter/gps.dart';
-import 'package:flutter_learningapp/tests/testsindex.dart';
+import 'package:flutter_learningapp/tests/testsindexflutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class MediaQuery1 extends StatefulWidget {

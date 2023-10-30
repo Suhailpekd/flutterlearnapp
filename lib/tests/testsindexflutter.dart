@@ -8,14 +8,14 @@ import 'package:flutter_learningapp/dart/looping_statements.dart';
 import 'package:flutter_learningapp/dart/oops.dart';
 import 'package:flutter_learningapp/dart/variebles.dart';
 
-class Indextests extends StatefulWidget {
-  const Indextests({super.key});
+class Indextestsflutter extends StatefulWidget {
+  const Indextestsflutter({super.key});
 
   @override
-  State<Indextests> createState() => _IndexdartState();
+  State<Indextestsflutter> createState() => _IndexdartState();
 }
 
-class _IndexdartState extends State<Indextests> {
+class _IndexdartState extends State<Indextestsflutter> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,7 +38,7 @@ class _IndexdartState extends State<Indextests> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " 1) Tests ?",
+                        " 1) Tests 1",
                         style: TextStyle(
                             fontWeight: FontWeight.bold, color: Colors.black),
                       ),
@@ -80,7 +80,7 @@ class _IndexdartState extends State<Indextests> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " 2)  Data Types",
+                        " 2)  Test 2",
                         style: TextStyle(
                             color: Colors.black, fontWeight: FontWeight.bold),
                       ),
@@ -122,7 +122,7 @@ class _IndexdartState extends State<Indextests> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " 3) Variebles",
+                        " 3) Test 3",
                         style: TextStyle(
                             color: Colors.black, fontWeight: FontWeight.bold),
                       ),
@@ -164,7 +164,7 @@ class _IndexdartState extends State<Indextests> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " 4) Conditional statements",
+                        " 4) Test 4",
                         style: TextStyle(
                             color: const Color.fromARGB(255, 0, 0, 0),
                             fontWeight: FontWeight.bold),
@@ -209,7 +209,7 @@ class _IndexdartState extends State<Indextests> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " 5) Looping statements",
+                        " 5) Test 5",
                         style: TextStyle(
                             color: Colors.black, fontWeight: FontWeight.bold),
                       ),
@@ -237,137 +237,8 @@ class _IndexdartState extends State<Indextests> {
 
 //
 
-          InkWell(
-            onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => Functions(),
-                  ));
-            },
-            child: Padding(
-              padding: const EdgeInsets.only(left: 28, right: 28),
-              child: Container(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 20, right: 20),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        " 6) Functions",
-                        style: TextStyle(
-                            color: Colors.black, fontWeight: FontWeight.bold),
-                      ),
-                      Icon(Icons.arrow_circle_right,
-                          color: const Color.fromARGB(164, 47, 43, 43))
-                    ],
-                  ),
-                ),
-                height: 60,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      blurStyle: BlurStyle.outer,
-                      color: Color.fromARGB(255, 234, 227, 236),
-                      blurRadius: 8,
-                      spreadRadius: 2,
-                    )
-                  ],
-                  borderRadius: BorderRadius.circular(15),
-                  color: Colors.white,
-                ),
-              ),
-            ),
-          ),
-
-          //
-          InkWell(
-            onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => Oops(),
-                  ));
-            },
-            child: Padding(
-              padding: const EdgeInsets.all(28),
-              child: Container(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 20, right: 20),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        " 7) OOPS",
-                        style: TextStyle(
-                            color: Colors.black, fontWeight: FontWeight.bold),
-                      ),
-                      Icon(Icons.arrow_circle_right,
-                          color: const Color.fromARGB(164, 47, 43, 43))
-                    ],
-                  ),
-                ),
-                height: 60,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      blurStyle: BlurStyle.outer,
-                      color: Color.fromARGB(255, 234, 227, 236),
-                      blurRadius: 8,
-                      spreadRadius: 2,
-                    )
-                  ],
-                  borderRadius: BorderRadius.circular(15),
-                  color: Colors.white,
-                ),
-              ),
-            ),
-          ),
-
           //
 
-          InkWell(
-            onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => Classandobjects(),
-                  ));
-            },
-            child: Padding(
-              padding: const EdgeInsets.only(left: 28, right: 28),
-              child: Container(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 20, right: 20),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        " 8) Dart Classes and Objects",
-                        style: TextStyle(
-                            color: Colors.black, fontWeight: FontWeight.bold),
-                      ),
-                      Icon(Icons.arrow_circle_right,
-                          color: const Color.fromARGB(164, 47, 43, 43))
-                    ],
-                  ),
-                ),
-                height: 60,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      blurStyle: BlurStyle.outer,
-                      color: Color.fromARGB(255, 234, 227, 236),
-                      blurRadius: 8,
-                      spreadRadius: 2,
-                    )
-                  ],
-                  borderRadius: BorderRadius.circular(15),
-                  color: Colors.white,
-                ),
-              ),
-            ),
-          ),
           SizedBox(
             height: 28,
           )

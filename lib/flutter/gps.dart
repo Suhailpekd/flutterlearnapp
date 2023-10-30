@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_learningapp/classes/cls.dart';
 import 'package:flutter_learningapp/classes/cls2.dart';
-import 'package:flutter_learningapp/tests/testsindex.dart';
+import 'package:flutter_learningapp/tabbar/tabbarflutter%20tests.dart';
+import 'package:flutter_learningapp/tests/testsindexflutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Gpslocation1 extends StatefulWidget {
@@ -362,7 +363,7 @@ class _WhatisdartState extends State<Gpslocation1> {
                                       height: 25,
                                     ),
                                     Text(
-                                      "Media-Query",
+                                      "GPS Location",
                                       selectionColor: Colors.amber,
                                       style: GoogleFonts.almarai(
                                         color: Colors.white,
@@ -392,7 +393,8 @@ class _WhatisdartState extends State<Gpslocation1> {
                                     Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => Gpslocation1(),
+                                          builder: (context) =>
+                                              Tabbartestsdart(),
                                         ));
                                   },
                                   child: Center(

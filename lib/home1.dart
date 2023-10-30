@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_learningapp/tabbar/tabbar1.dart';
+import 'package:flutter_learningapp/tabbar/tabbarflutter%20tests.dart';
 import 'package:flutter_learningapp/tabbar/tabbarflutter.dart';
-import 'package:flutter_learningapp/tests/testsindex.dart';
+import 'package:flutter_learningapp/tests/testsindexflutter.dart';
 
 class Home1 extends StatefulWidget {
   const Home1({super.key});
@@ -161,7 +162,7 @@ class _Home1State extends State<Home1> {
                         Navigator.push(
                           (context),
                           MaterialPageRoute(
-                            builder: (context) => Indextests(),
+                            builder: (context) => Tabbartestsdart(),
                           ),
                         );
                       },

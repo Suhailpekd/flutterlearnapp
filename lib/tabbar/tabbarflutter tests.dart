@@ -2,15 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter_learningapp/tabbar/discriptionflutter.dart';
 
 import 'package:flutter_learningapp/tabbar/indexflutter.dart';
+import 'package:flutter_learningapp/tests/testsindexdart.dart';
+import 'package:flutter_learningapp/tests/testsindexflutter.dart';
 
-class Tabbarflutter2 extends StatefulWidget {
-  const Tabbarflutter2({super.key});
+class Tabbartestsdart extends StatefulWidget {
+  const Tabbartestsdart({super.key});
 
   @override
-  State<Tabbarflutter2> createState() => _Dart2State();
+  State<Tabbartestsdart> createState() => _Dart2State();
 }
 
-class _Dart2State extends State<Tabbarflutter2> {
+class _Dart2State extends State<Tabbartestsdart> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -21,17 +23,17 @@ class _Dart2State extends State<Tabbarflutter2> {
             dividerColor: Color.fromARGB(15, 0, 0, 0),
             tabs: [
               Tab(
-                text: "INDEX",
+                text: "DART",
               ),
-              Tab(text: "DESCRIPTION"),
+              Tab(text: "FLUTTER"),
             ],
           ),
-          title: Text('Flutter'),
+          title: Text('Tests'),
         ),
         body: TabBarView(
           children: [
-            Indexflutter(),
-            Flutterstarting(),
+            Indextestsdart(),
+            Indextestsflutter(),
           ],
         ),
       ),

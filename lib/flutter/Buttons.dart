@@ -140,7 +140,7 @@ class _WhatisdartState extends State<Buttons1> {
                               Expanded(
                                 child: Text(
                                     style: TextStyle(fontSize: 15),
-                                    "Understandable Sintex "),
+                                    "Understandable Syntex "),
                               ),
                             ],
                           ),

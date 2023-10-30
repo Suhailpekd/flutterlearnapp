@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learningapp/dart/conditionalstatements.dart';
-import 'package:flutter_learningapp/dart/variebles.dart';
+import 'package:flutter_learningapp/classes/drawer%20class.dart';
 import 'package:flutter_learningapp/home1.dart';
+import 'package:flutter_learningapp/project_purchase.dart/projects.dart';
 
 class Navig extends StatefulWidget {
   const Navig({super.key});
@@ -19,72 +19,12 @@ class _NavigState extends State<Navig> {
     });
   }
 
-  var list1 = [Home1(), Text(''), Text(''), Text('')];
+  var list1 = [Home1(), Projects1(), Home1()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(),
-        drawer: Drawer(
-          backgroundColor: Color.fromARGB(255, 252, 252, 252),
-          child: Padding(
-            padding: const EdgeInsets.only(left: 19, right: 19),
-            child: ListView(children: [
-              DrawerHeader(
-                child: Column(
-                  children: [
-                    Container(
-                        height: 70,
-                        width: 90,
-                        decoration: BoxDecoration(
-                            color: Colors.blue,
-                            borderRadius: BorderRadius.circular(50)),
-                        child: Column(
-                          children: [
-                            Center(child: Text("Welcome")),
-                          ],
-                        )),
-                  ],
-                ),
-              ),
-              ListTile(
-                  onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => Variebles(),
-                      )),
-                  title: Text("Profile")),
-              Divider(),
-              ListTile(
-                onTap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => Variebles(),
-                      ));
-                },
-                title: Text("Review"),
-              ),
-              Divider(),
-              ListTile(
-                  onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => Conditionalstatements()));
-                  },
-                  title: Text("About")),
-              Divider(),
-              ListTile(
-                  onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => Variebles(),
-                      )),
-                  title: Text("Log Out")),
-              Divider()
-            ]),
-          ),
-        ),
+        drawer: Drawerclass(),
         body: Center(
           child: list1.elementAt(selectedindex),
         ),
@@ -101,20 +41,20 @@ class _NavigState extends State<Navig> {
                 ),
                 backgroundColor: Colors.white),
             BottomNavigationBarItem(
-                icon: Icon(Icons.domain_add_sharp,
+                icon: Icon(Icons.shop_2_outlined,
                     size: 20, color: Colors.black54),
-                label: "Categories",
+                label: "Project Puchase",
                 activeIcon: Icon(
-                  Icons.domain_add_sharp,
+                  Icons.shop_2_outlined,
                   size: 20,
                   color: Color.fromARGB(255, 11, 9, 148),
                 ),
                 backgroundColor: Colors.white60),
             BottomNavigationBarItem(
-                icon: Icon(Icons.shopping_bag_outlined,
+                icon: Icon(Icons.question_answer_outlined,
                     size: 20, color: Colors.black54),
-                label: ("Basket"),
-                activeIcon: Icon(Icons.shopping_bag_outlined,
+                label: ("Chat With"),
+                activeIcon: Icon(Icons.question_answer_outlined,
                     size: 20, color: Color.fromARGB(255, 11, 9, 148))),
           ],
           backgroundColor: Colors.white,
