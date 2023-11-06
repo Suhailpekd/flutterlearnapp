@@ -1,6 +1,8 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_learningapp/drawer/botomnav.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 class Registerpage1 extends StatefulWidget {
   const Registerpage1({super.key});
@@ -10,6 +12,16 @@ class Registerpage1 extends StatefulWidget {
 }
 
 class _Registerpage1State extends State<Registerpage1> {
+  Future<void> signInWithGoogle() async {
+    GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
+    GoogleSignInAuthentication? googleAuth = await googleUser?.authentication;
+    AuthCredential credential = GoogleAuthProvider.credential(
+        accessToken: googleAuth?.accessToken, idToken: googleAuth?.idToken);
+    UserCredential userCredential =
+        await FirebaseAuth.instance.signInWithCredential(credential);
+    print(userCredential.user?.displayName);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,10 +55,7 @@ class _Registerpage1State extends State<Registerpage1> {
             ),
             InkWell(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Navig()),
-                );
+                signInWithGoogle();
               },
               child: Center(
                 child: Container(
