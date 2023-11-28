@@ -35,9 +35,22 @@ class _MyWidgetState extends State<Projects1> {
               itemCount: snapshot.data!.length,
               itemBuilder: (BuildContext context, int index) {
                 var document = snapshot.data![index];
-                return ListTile(
-                  title: Text(document['Topic']),
-                  subtitle: Text(document['Modules']),
+                return Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(width: 2),
+                    color: Color.fromARGB(255, 95, 122, 32),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Topic"),
+                      Text(document["Topic"]),
+                      Text("Description"),
+                      Text("Modules"),
+                      Text(document["Modules"]),
+                      Text(document["Description"]),
+                    ],
+                  ),
                 );
               },
             );
