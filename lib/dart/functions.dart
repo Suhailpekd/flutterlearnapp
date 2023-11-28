@@ -23,29 +23,71 @@ class _WhatisdartState extends State<Functions> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    SizedBox(
+                    Container(
                       height: 200,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(12),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Color.fromARGB(255, 234, 227, 236),
+                              blurRadius: 8,
+                              spreadRadius: 5,
+                            )
+                          ],
+                          gradient: LinearGradient(colors: [
+                            Color.fromARGB(255, 255, 255, 255),
+                            Color.fromARGB(255, 54, 6, 175)
+                          ])),
+                      child: Padding(
+                        padding: const EdgeInsets.only(
+                            top: 50, bottom: 50, right: 20),
+                        child: Row(
+                          children: [
+                            Expanded(
+                              child: SizedBox(
+                                height: 90,
+                                child: Image.asset(
+                                  "asset/birddart.png",
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(top: 34),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Expanded(
+                                    child: Text(
+                                      "FUNCTIONS",
+                                      selectionColor: Colors.amber,
+                                      style: GoogleFonts.almarai(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 24,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
                     ),
 
                     //def
 
                     Padding(
                       padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Icon(Icons.arrow_right_outlined),
-                              Expanded(
-                                  child: Text(
-                                      style: TextStyle(fontSize: 15),
-                                      "The function is a set of statements that take inputs, do some specific computation, and produce output. Functions are created when certain statements are repeatedly occurring in the program and a function is created to replace them. Functions make it easy to divide the complex program into smaller sub-groups and increase the code reusability of the program."))
-                            ],
-                          ),
-                        ),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Icon(Icons.arrow_right_outlined),
+                          Expanded(
+                              child: Text(
+                                  style: TextStyle(fontSize: 15),
+                                  "The function is a set of statements that take inputs, do some specific computation, and produce output. Functions are created when certain statements are repeatedly occurring in the program and a function is created to replace them. Functions make it easy to divide the complex program into smaller sub-groups and increase the code reusability of the program."))
+                        ],
                       ),
                     ),
 
@@ -54,37 +96,29 @@ class _WhatisdartState extends State<Functions> {
                       child: Container(
                         decoration: BoxDecoration(
                             color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Icon(Icons.arrow_right_outlined),
-                              Expanded(
-                                  child: Text(
-                                      style: TextStyle(fontSize: 15),
-                                      "Actual Parameter - A parameter which is passed during a function definition is called the actual parameter."))
-                            ],
-                          ),
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Icon(Icons.arrow_right_outlined),
+                            Expanded(
+                                child: Text(
+                                    style: TextStyle(fontSize: 15),
+                                    "Actual Parameter - A parameter which is passed during a function definition is called the actual parameter."))
+                          ],
                         ),
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Icon(Icons.arrow_right_outlined),
-                              Expanded(
-                                  child: Text(
-                                      style: TextStyle(fontSize: 15),
-                                      "Formal Parameter - A parameter which is passed during a function call is called the formal parameter."))
-                            ],
-                          ),
-                        ),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Icon(Icons.arrow_right_outlined),
+                          Expanded(
+                              child: Text(
+                                  style: TextStyle(fontSize: 15),
+                                  "Formal Parameter - A parameter which is passed during a function call is called the formal parameter."))
+                        ],
                       ),
                     ),
 
@@ -101,63 +135,8 @@ class _WhatisdartState extends State<Functions> {
               child: Stack(
                 children: [
                   Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      Container(
-                        height: 200,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(12),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Color.fromARGB(255, 234, 227, 236),
-                                blurRadius: 8,
-                                spreadRadius: 5,
-                              )
-                            ],
-                            gradient: LinearGradient(colors: [
-                              Color.fromARGB(255, 255, 255, 255),
-                              Color.fromARGB(255, 54, 6, 175)
-                            ])),
-                        child: Expanded(
-                            child: Padding(
-                          padding: const EdgeInsets.only(
-                              top: 50, bottom: 50, right: 20),
-                          child: Expanded(
-                            child: Row(
-                              children: [
-                                Expanded(
-                                  child: SizedBox(
-                                    height: 90,
-                                    child: Image.asset(
-                                      "asset/birddart.png",
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 34),
-                                  child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Expanded(
-                                        child: Text(
-                                          "FUNCTIONS",
-                                          selectionColor: Colors.amber,
-                                          style: GoogleFonts.almarai(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 24,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        )),
-                      ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [

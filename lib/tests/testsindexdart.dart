@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_learningapp/dart/1whatisdart.dart';
 import 'package:flutter_learningapp/dart/2Datatypes.dart';
-import 'package:flutter_learningapp/dart/class_and_objects.dart';
 import 'package:flutter_learningapp/dart/conditionalstatements.dart';
-import 'package:flutter_learningapp/dart/functions.dart';
 import 'package:flutter_learningapp/dart/looping_statements.dart';
-import 'package:flutter_learningapp/dart/oops.dart';
 import 'package:flutter_learningapp/dart/variebles.dart';
 
 class Indextestsdart extends StatefulWidget {
@@ -233,12 +230,8 @@ class _IndexdartState extends State<Indextestsdart> {
                 ),
               ),
             ),
-          ),
-
+          ), //
 //
-
-          //
-
           SizedBox(
             height: 28,
           )

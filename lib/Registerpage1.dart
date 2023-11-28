@@ -1,8 +1,11 @@
+import 'dart:async';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_learningapp/drawer/botomnav.dart';
+
 import 'package:google_fonts/google_fonts.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class Registerpage1 extends StatefulWidget {
   const Registerpage1({super.key});
@@ -19,7 +22,11 @@ class _Registerpage1State extends State<Registerpage1> {
         accessToken: googleAuth?.accessToken, idToken: googleAuth?.idToken);
     UserCredential userCredential =
         await FirebaseAuth.instance.signInWithCredential(credential);
-    print(userCredential.user?.displayName);
+    var a = userCredential.user?.displayName;
+    var b = userCredential.user?.email;
+
+    print(b);
+    print(a);
   }
 
   @override

@@ -1,5 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_learningapp/drawer/botomnav.dart';
+import 'package:flutter_learningapp/classes/cls.dart';
+import 'package:flutter_learningapp/home1.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Classandobjects extends StatefulWidget {
@@ -10,30 +12,89 @@ class Classandobjects extends StatefulWidget {
 }
 
 class _WhatisdartState extends State<Classandobjects> {
+  void main() {}
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Stack(
-          children: [
-            Padding(
-              padding: EdgeInsets.all(18.0),
-              child: SingleChildScrollView(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    SizedBox(
-                      height: 225,
+      body: Stack(
+        children: [
+          Padding(
+            padding: EdgeInsets.all(18.0),
+            child: SafeArea(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    height: 200,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Color.fromARGB(255, 234, 227, 236),
+                            blurRadius: 8,
+                            spreadRadius: 5,
+                          )
+                        ],
+                        gradient: LinearGradient(colors: [
+                          Color.fromARGB(255, 255, 255, 255),
+                          Color.fromARGB(255, 54, 6, 175)
+                        ])),
+                    child: Padding(
+                      padding:
+                          const EdgeInsets.only(top: 50, bottom: 50, right: 20),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: SizedBox(
+                              height: 90,
+                              child: Image.asset(
+                                "asset/birddart.png",
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 34),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Expanded(
+                                  child: Text(
+                                    "CLASSES AND",
+                                    selectionColor: Colors.amber,
+                                    style: GoogleFonts.almarai(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 24,
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: Text(
+                                    "OBJECTS",
+                                    selectionColor: Colors.amber,
+                                    style: GoogleFonts.almarai(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 24,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
+                  ),
 
-                    //def
+                  //def
 
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
+                  Expanded(
+                    child: ListView(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(9.0),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -45,24 +106,17 @@ class _WhatisdartState extends State<Classandobjects> {
                             ],
                           ),
                         ),
-                      ),
-                    ),
-                    Padding(
-                      padding:
-                          const EdgeInsets.only(left: 20, top: 20, bottom: 10),
-                      child: Text(
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 16),
-                        "Defining a Class in Dart",
-                      ),
-                    ),
-
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
+                        Padding(
+                          padding: const EdgeInsets.only(
+                              left: 20, top: 20, bottom: 10),
+                          child: Text(
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 16),
+                            "Defining a Class in Dart",
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(9.0),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -74,25 +128,17 @@ class _WhatisdartState extends State<Classandobjects> {
                             ],
                           ),
                         ),
-                      ),
-                    ),
-
-                    Padding(
-                      padding:
-                          const EdgeInsets.only(left: 20, top: 20, bottom: 10),
-                      child: Text(
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 16),
-                        "Dart Object",
-                      ),
-                    ),
-
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
+                        Padding(
+                          padding: const EdgeInsets.only(
+                              left: 20, top: 20, bottom: 10),
+                          child: Text(
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 16),
+                            "Dart Object",
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(9.0),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -104,25 +150,17 @@ class _WhatisdartState extends State<Classandobjects> {
                             ],
                           ),
                         ),
-                      ),
-                    ),
-
-                    Padding(
-                      padding:
-                          const EdgeInsets.only(left: 20, top: 20, bottom: 10),
-                      child: Text(
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 16),
-                        "Creating Class Objects in Dart",
-                      ),
-                    ),
-
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
+                        Padding(
+                          padding: const EdgeInsets.only(
+                              left: 20, top: 20, bottom: 10),
+                          child: Text(
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 16),
+                            "Creating Class Objects in Dart",
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(9.0),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -134,91 +172,68 @@ class _WhatisdartState extends State<Classandobjects> {
                             ],
                           ),
                         ),
-                      ),
+                      ],
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
-            SafeArea(
-              child: Padding(
-                padding: const EdgeInsets.only(
-                  left: 20,
-                  right: 20,
-                ),
-                child: Stack(
+          ),
+          Padding(
+            padding: const EdgeInsets.only(
+              left: 20,
+              right: 20,
+            ),
+            child: Stack(
+              children: [],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(
+              left: 20,
+              right: 20,
+            ),
+            child: Stack(children: [
+              Column(mainAxisAlignment: MainAxisAlignment.end, children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    Container(
-                      height: 200,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(12),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Color.fromARGB(255, 234, 227, 236),
-                              blurRadius: 8,
-                              spreadRadius: 5,
-                            )
-                          ],
-                          gradient: LinearGradient(colors: [
-                            Color.fromARGB(255, 255, 255, 255),
-                            Color.fromARGB(255, 54, 6, 175)
-                          ])),
-                      child: Expanded(
-                          child: Padding(
-                        padding: const EdgeInsets.only(
-                            top: 50, bottom: 50, right: 20),
-                        child: Expanded(
-                          child: Row(
-                            children: [
-                              Expanded(
-                                child: SizedBox(
-                                  height: 90,
-                                  child: Image.asset(
-                                    "asset/birddart.png",
-                                  ),
-                                ),
+                    Column(
+                      // crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        Home_button(),
+                        InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => Home1(),
+                                  ));
+                            },
+                            child: Center(
+                                child: Container(
+                              height: 45,
+                              width: 45,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(50),
+                                  color: Color.fromARGB(255, 119, 6, 175)),
+                              child: Icon(
+                                Icons.arrow_forward_ios,
+                                size: 25,
+                                color: Color.fromARGB(255, 255, 255, 255),
                               ),
-                              Padding(
-                                padding: const EdgeInsets.only(top: 34),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Expanded(
-                                      child: Text(
-                                        "CLASSES AND",
-                                        selectionColor: Colors.amber,
-                                        style: GoogleFonts.almarai(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 24,
-                                        ),
-                                      ),
-                                    ),
-                                    Expanded(
-                                      child: Text(
-                                        "OBJECTS",
-                                        selectionColor: Colors.amber,
-                                        style: GoogleFonts.almarai(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 24,
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      )),
+                            ))),
+                        SizedBox(
+                          height: 13,
+                        )
+                      ],
                     ),
                   ],
                 ),
-              ),
-            ),
-          ],
-        ),
+              ])
+            ]),
+          )
+        ],
       ),
     );
   }

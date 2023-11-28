@@ -210,7 +210,7 @@ class _DartstartingState extends State<Dartstarting> {
                 padding: const EdgeInsets.all(30),
                 child: InkWell(
                     onTap: () {
-                      Navigator.push(
+                      Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
                             builder: (context) => Dart2(),

@@ -20,302 +20,346 @@ class _WhatisdartState extends State<Rows_columns> {
         child: Stack(
           children: [
             Padding(
-              padding: EdgeInsets.all(18.0),
-              child: SingleChildScrollView(
+              padding: EdgeInsets.only(left: 9, right: 9),
+              child: SafeArea(
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  // crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    SizedBox(
-                      height: 225,
+                    Container(
+                      height: 200,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(12),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Color.fromARGB(255, 234, 227, 236),
+                              blurRadius: 8,
+                              spreadRadius: 5,
+                            )
+                          ],
+                          gradient: LinearGradient(colors: [
+                            Color.fromARGB(255, 255, 255, 255),
+                            Color.fromARGB(255, 54, 6, 175)
+                          ])),
+                      child: Padding(
+                        padding: const EdgeInsets.only(
+                            top: 50, bottom: 50, right: 20),
+                        child: Row(
+                          children: [
+                            Flutterbird(),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                SizedBox(
+                                  height: 25,
+                                ),
+                                Text(
+                                  "Rows And ",
+                                  selectionColor: Colors.amber,
+                                  style: GoogleFonts.almarai(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 24,
+                                  ),
+                                ),
+                                Text(
+                                  "Coloumns ",
+                                  selectionColor: Colors.amber,
+                                  style: GoogleFonts.almarai(
+                                      color: Colors.white,
+                                      fontSize: 24,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Icon(Icons.arrow_right_outlined),
-                              Expanded(
-                                child: Text(
-                                    style: TextStyle(fontSize: 15),
-                                    "Flutter is an open source framework by Google for building beautiful, natively compiled, multi-platform applications from a single codebase."),
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 25),
+                        child: ListView(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(9.0),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Icon(Icons.arrow_right_outlined),
+                                  Expanded(
+                                    child: Text(
+                                        style: TextStyle(
+                                            fontSize: 15,
+                                            fontWeight: FontWeight.w700),
+                                        "Row and Column are the two most important and powerful widgets in Flutter."),
+                                  ),
+                                ],
                               ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      // child: InkWell(
-                      //   onTap: () {
-                      //     setState(() {
-                      //       change();
-                      //     });
-                      //   },
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Icon(Icons.arrow_right_outlined),
-                              Expanded(
-                                child: Text(
-                                    style: TextStyle(fontSize: 15),
-                                    "Flutter is powered by Dart, a language optimized for fast apps on any platform"),
-                              )
-                            ],
-                          ),
-                        ),
-                      ),
-                      // ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      // child: InkWell(
-                      //   onTap: () {
-                      //     change2();
-                      //   },
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Icon(Icons.arrow_right_outlined),
-                              Expanded(
-                                child: Text(
-                                    style: TextStyle(fontSize: 15),
-                                    "Dart is a C-style syntax programing language developed by Google in 2011."),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(9.0),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Icon(Icons.arrow_right_outlined),
+                                  Expanded(
+                                    child: Text(
+                                        style: TextStyle(
+                                            fontSize: 15,
+                                            fontWeight: FontWeight.normal),
+                                        "These widgets let you align children horizontally and vertically as per the requirement. As we know that when we design any UI(User Interface)  in a flutter,"),
+                                  ),
+                                ],
                               ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      // ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      // child: InkWell(
-                      //   onTap: () {
-                      //     setState(() {
-                      //       change3();
-                      //     });
-                      //   },
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Icon(Icons.arrow_right_outlined),
-                              Expanded(
-                                child: Text(
-                                    style: TextStyle(fontSize: 15),
-                                    "inspired by other programming languages such as Java, JavaScript, C#, "),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(9.0),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Icon(Icons.arrow_right_outlined),
+                                  Expanded(
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(top: 3),
+                                      child: Text(
+                                          style: TextStyle(
+                                              fontSize: 15,
+                                              fontWeight: FontWeight.bold),
+                                          " Properties of Rows And Column :-"),
+                                    ),
+                                  ),
+                                ],
                               ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      // ),
-                    ),
-                    Padding(
-                      padding:
-                          const EdgeInsets.only(left: 20, top: 20, bottom: 10),
-                      child: Text(
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 16),
-                        "Advantages Of Dart ",
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Icon(Icons.arrow_right_outlined),
-                              Expanded(
-                                child: Text(
-                                    style: TextStyle(fontSize: 15),
-                                    "Understandable Sintex "),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(9.0),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Icon(Icons.arrow_right_outlined),
+                                  Expanded(
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(top: 3),
+                                      child: Text(
+                                          style: TextStyle(
+                                              fontSize: 15,
+                                              fontWeight: FontWeight.w500),
+                                          "children :-"),
+                                    ),
+                                  ),
+                                ],
                               ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Icon(Icons.arrow_right_outlined),
-                              Expanded(
-                                child: Text(
-                                    style: TextStyle(fontSize: 15),
-                                    "Quick loading Code"),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 38),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Expanded(
+                                    child: Text(
+                                        style: TextStyle(fontSize: 15),
+                                        "This property takes in List<Widget>, that is a list of widgets to display inside the Row or the Column widget. "),
+                                  ),
+                                ],
                               ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Icon(Icons.arrow_right_outlined),
-                              Expanded(
-                                child: Text(
-                                    style: TextStyle(fontSize: 15),
-                                    "Fast Garbage Collector"),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(9.0),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Icon(Icons.arrow_right_outlined),
+                                  Expanded(
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(top: 3),
+                                      child: Text(
+                                          style: TextStyle(
+                                              fontSize: 15,
+                                              fontWeight: FontWeight.w500),
+                                          "clipBehaviour :-"),
+                                    ),
+                                  ),
+                                ],
                               ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Icon(Icons.arrow_right_outlined),
-                              Expanded(
-                                child: Text(
-                                    style: TextStyle(fontSize: 15),
-                                    "Belonging to Google"),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 38),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Expanded(
+                                    child: Text(
+                                        style: TextStyle(fontSize: 15),
+                                        "This property holds Clip class as the object to decide whether the content on the Row or Column should be clipped or not."),
+                                  ),
+                                ],
                               ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Icon(Icons.arrow_right_outlined),
-                              Expanded(
-                                child: Text(
-                                    style: TextStyle(fontSize: 15),
-                                    "Free and Open Source "),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(9.0),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Icon(Icons.arrow_right_outlined),
+                                  Expanded(
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(top: 3),
+                                      child: Text(
+                                          style: TextStyle(
+                                              fontSize: 15,
+                                              fontWeight: FontWeight.w500),
+                                          "crossAxisAlignment :-"),
+                                    ),
+                                  ),
+                                ],
                               ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Icon(Icons.arrow_right_outlined),
-                              Expanded(
-                                child: Text(
-                                    style: TextStyle(fontSize: 15),
-                                    "High performance factor"),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 38),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Expanded(
+                                    child: Text(
+                                        style: TextStyle(fontSize: 15),
+                                        "The crossAxisAlignment takes in CrossAxisAlignment enum as the object to how the children’s widgets should be places in crossAxisAlignment. For Row it is vertical and for Column it is horizontal."),
+                                  ),
+                                ],
                               ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Icon(Icons.arrow_right_outlined),
-                              Expanded(
-                                child: Text(
-                                    style: TextStyle(fontSize: 15),
-                                    "More type-safe than Javascript"),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(9.0),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Icon(Icons.arrow_right_outlined),
+                                  Expanded(
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(top: 3),
+                                      child: Text(
+                                          style: TextStyle(
+                                              fontSize: 15,
+                                              fontWeight: FontWeight.w500),
+                                          "direction :-"),
+                                    ),
+                                  ),
+                                ],
                               ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Icon(Icons.arrow_right_outlined),
-                              Expanded(
-                                child: Text(
-                                    style: TextStyle(fontSize: 15),
-                                    "Can write the first program without installation or configuration"),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 38),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Expanded(
+                                    child: Text(
+                                        style: TextStyle(fontSize: 15),
+                                        "This property holds as the Axis enum object to decide the direction used in the main axis. For Row and Column, it is fixed."),
+                                  ),
+                                ],
                               ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Icon(Icons.arrow_right_outlined),
-                              Expanded(
-                                child: Text(
-                                    style: TextStyle(fontSize: 15),
-                                    "No need for any specific hardware configurations or architecture for running Dart,"),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(9.0),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Icon(Icons.arrow_right_outlined),
+                                  Expanded(
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(top: 3),
+                                      child: Text(
+                                          style: TextStyle(
+                                              fontSize: 15,
+                                              fontWeight: FontWeight.w500),
+                                          "mainAxisAlignment :-"),
+                                    ),
+                                  ),
+                                ],
                               ),
-                            ],
-                          ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 38),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Expanded(
+                                    child: Text(
+                                        style: TextStyle(fontSize: 15),
+                                        "This property takes in MainAxisAlignment enum as the object to decide how the children widgets should be place in mainAxisAlignment. For Row it is horizontal and for Column it is vertical."),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(9.0),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Icon(Icons.arrow_right_outlined),
+                                  Expanded(
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(top: 3),
+                                      child: Text(
+                                          style: TextStyle(
+                                              fontSize: 15,
+                                              fontWeight: FontWeight.w500),
+                                          "MainAxisSize :-"),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 38),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Expanded(
+                                    child: Text(
+                                        style: TextStyle(fontSize: 15),
+                                        "This property takes in MainAxisAlignment enum as the object to decide how the children widgets should be place in mainAxisAlignment. For Row it is horizontal and for Column it is vertical."),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(9.0),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Icon(Icons.arrow_right_outlined),
+                                  Expanded(
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(top: 3),
+                                      child: Text(
+                                          style: TextStyle(
+                                              fontSize: 15,
+                                              fontWeight: FontWeight.w500),
+                                          "Run Time :-"),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 38),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Expanded(
+                                    child: Text(
+                                        style: TextStyle(fontSize: 15),
+                                        "This property decides the size of main-axis by taking in MainAxisSize enum as the object."),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ),
+
                     SizedBox(
                       height: 45,
                     )
@@ -332,65 +376,13 @@ class _WhatisdartState extends State<Rows_columns> {
               child: Stack(
                 children: [
                   Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       // Container(
                       //   height: 35,
                       //   color: Colors.white,
                       // ),
-                      Container(
-                        height: 200,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(12),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Color.fromARGB(255, 234, 227, 236),
-                                blurRadius: 8,
-                                spreadRadius: 5,
-                              )
-                            ],
-                            gradient: LinearGradient(colors: [
-                              Color.fromARGB(255, 255, 255, 255),
-                              Color.fromARGB(255, 54, 6, 175)
-                            ])),
-                        child: Expanded(
-                            child: Padding(
-                          padding: const EdgeInsets.only(
-                              top: 50, bottom: 50, right: 20),
-                          child: Expanded(
-                            child: Row(
-                              children: [
-                                Flutterbird(),
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    SizedBox(
-                                      height: 25,
-                                    ),
-                                    Text(
-                                      "Rows And ",
-                                      selectionColor: Colors.amber,
-                                      style: GoogleFonts.almarai(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 24,
-                                      ),
-                                    ),
-                                    Text(
-                                      "Coloumns ",
-                                      selectionColor: Colors.amber,
-                                      style: GoogleFonts.almarai(
-                                          color: Colors.white,
-                                          fontSize: 24,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                          ),
-                        )),
-                      ),
+
                       // SizedBox(
                       //   height: 300,
                       // ),

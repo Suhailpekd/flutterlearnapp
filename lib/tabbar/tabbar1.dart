@@ -20,10 +20,10 @@ class _Dart2State extends State<Dart2> {
           bottom: TabBar(
             dividerColor: Color.fromARGB(15, 0, 0, 0),
             tabs: [
+              Tab(text: "INDEX"),
               Tab(
-                text: "INDEX",
+                text: "DESCRIPTION",
               ),
-              Tab(text: "DESCRIPTION"),
             ],
           ),
           title: Text('Dart'),

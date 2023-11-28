@@ -19,22 +19,68 @@ class _WhatisdartState extends State<Oops> {
           children: [
             Padding(
               padding: EdgeInsets.all(18.0),
-              child: SingleChildScrollView(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    SizedBox(
-                      height: 200,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    height: 200,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Color.fromARGB(255, 234, 227, 236),
+                            blurRadius: 8,
+                            spreadRadius: 5,
+                          )
+                        ],
+                        gradient: LinearGradient(colors: [
+                          Color.fromARGB(255, 255, 255, 255),
+                          Color.fromARGB(255, 54, 6, 175)
+                        ])),
+                    child: Padding(
+                      padding:
+                          const EdgeInsets.only(top: 50, bottom: 50, right: 20),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: SizedBox(
+                              height: 90,
+                              child: Image.asset(
+                                "asset/birddart.png",
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 34, right: 30),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Expanded(
+                                  child: Text(
+                                    "OOPS",
+                                    selectionColor: Colors.amber,
+                                    style: GoogleFonts.almarai(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 24,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
+                  ),
 
-                    //def
+                  //def
 
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
+                  Expanded(
+                    child: ListView(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(9.0),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -46,24 +92,17 @@ class _WhatisdartState extends State<Oops> {
                             ],
                           ),
                         ),
-                      ),
-                    ),
-                    Padding(
-                      padding:
-                          const EdgeInsets.only(left: 20, top: 20, bottom: 10),
-                      child: Text(
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 16),
-                        "Class",
-                      ),
-                    ),
-
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
+                        Padding(
+                          padding: const EdgeInsets.only(
+                              left: 20, top: 20, bottom: 10),
+                          child: Text(
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 16),
+                            "Class",
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(9.0),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -75,25 +114,17 @@ class _WhatisdartState extends State<Oops> {
                             ],
                           ),
                         ),
-                      ),
-                    ),
-
-                    Padding(
-                      padding:
-                          const EdgeInsets.only(left: 20, top: 20, bottom: 10),
-                      child: Text(
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 16),
-                        "Object",
-                      ),
-                    ),
-
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
+                        Padding(
+                          padding: const EdgeInsets.only(
+                              left: 20, top: 20, bottom: 10),
+                          child: Text(
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 16),
+                            "Object",
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(9.0),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -105,55 +136,17 @@ class _WhatisdartState extends State<Oops> {
                             ],
                           ),
                         ),
-                      ),
-                    ),
-
-                    Padding(
-                      padding:
-                          const EdgeInsets.only(left: 20, top: 20, bottom: 10),
-                      child: Text(
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 16),
-                        "Class",
-                      ),
-                    ),
-
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Icon(Icons.arrow_right_outlined),
-                              Expanded(
-                                  child: Text(
-                                      style: TextStyle(fontSize: 15),
-                                      "Dart classes are defined as the blueprint of the associated objects. A Class is a user-defined data type that describes the characteristics and behavior of it. To get all properties of the class, we must create an object of that class. The syntax of the class is given below."))
-                            ],
+                        Padding(
+                          padding: const EdgeInsets.only(
+                              left: 20, top: 20, bottom: 10),
+                          child: Text(
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 16),
+                            "Inheritance",
                           ),
                         ),
-                      ),
-                    ),
-
-                    Padding(
-                      padding:
-                          const EdgeInsets.only(left: 20, top: 20, bottom: 10),
-                      child: Text(
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 16),
-                        "Inheritance",
-                      ),
-                    ),
-
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
+                        Padding(
+                          padding: const EdgeInsets.all(9.0),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -165,25 +158,17 @@ class _WhatisdartState extends State<Oops> {
                             ],
                           ),
                         ),
-                      ),
-                    ),
-
-                    Padding(
-                      padding:
-                          const EdgeInsets.only(left: 20, top: 20, bottom: 10),
-                      child: Text(
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 16),
-                        "Polymorphism",
-                      ),
-                    ),
-
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
+                        Padding(
+                          padding: const EdgeInsets.only(
+                              left: 20, top: 20, bottom: 10),
+                          child: Text(
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 16),
+                            "Polymorphism",
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(9.0),
                           child: Row(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -194,41 +179,40 @@ class _WhatisdartState extends State<Oops> {
                                         "Polymorphism is an object-oriented programming concept where one thing has many forms. There can be two types - Runtime polymorphism and Compile time polymorphism. For example - A function has the same name but with a different behaviour or class. Another example is the shape() class, and all the class inherited from the Rectangle, Triangle, and circle."))
                               ]),
                         ),
-                      ),
+                        Padding(
+                          padding: const EdgeInsets.only(
+                              left: 20, top: 20, bottom: 10),
+                          child: Text(
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 16),
+                            "Abstract Class",
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(9.0),
+                          child: Container(
+                              decoration: BoxDecoration(
+                                  color:
+                                      const Color.fromARGB(255, 252, 251, 251)),
+                              child: Row(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Icon(Icons.arrow_right_outlined),
+                                    Expanded(
+                                        child: Text(
+                                            style: TextStyle(fontSize: 15),
+                                            "A class that contains one or more abstract methods is called an abstract class. We can declare the abstract class using the abstract keyword followed by class declaration. The syntax is given below"))
+                                  ])),
+                        ),
+                      ],
                     ),
-
-                    Padding(
-                      padding:
-                          const EdgeInsets.only(left: 20, top: 20, bottom: 10),
-                      child: Text(
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 16),
-                        "Abstract Class",
-                      ),
-                    ),
-
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                          decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 252, 251, 251)),
-                          child: Expanded(
-                            child: Row(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Icon(Icons.arrow_right_outlined),
-                                  Expanded(
-                                      child: Text(
-                                          style: TextStyle(fontSize: 15),
-                                          "A class that contains one or more abstract methods is called an abstract class. We can declare the abstract class using the abstract keyword followed by class declaration. The syntax is given below"))
-                                ]),
-                          )),
-                    ),
-                    //button>
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
+
+            //button>
+
             Padding(
               padding: const EdgeInsets.only(
                 left: 20,
@@ -237,64 +221,8 @@ class _WhatisdartState extends State<Oops> {
               child: Stack(
                 children: [
                   Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      Container(
-                        height: 200,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(12),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Color.fromARGB(255, 234, 227, 236),
-                                blurRadius: 8,
-                                spreadRadius: 5,
-                              )
-                            ],
-                            gradient: LinearGradient(colors: [
-                              Color.fromARGB(255, 255, 255, 255),
-                              Color.fromARGB(255, 54, 6, 175)
-                            ])),
-                        child: Expanded(
-                            child: Padding(
-                          padding: const EdgeInsets.only(
-                              top: 50, bottom: 50, right: 20),
-                          child: Expanded(
-                            child: Row(
-                              children: [
-                                Expanded(
-                                  child: SizedBox(
-                                    height: 90,
-                                    child: Image.asset(
-                                      "asset/birddart.png",
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding:
-                                      const EdgeInsets.only(top: 34, right: 30),
-                                  child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Expanded(
-                                        child: Text(
-                                          "OOPS",
-                                          selectionColor: Colors.amber,
-                                          style: GoogleFonts.almarai(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 24,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        )),
-                      ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [

@@ -18,27 +18,64 @@ class _WhatisdartState extends State<Variebles> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Stack(
-          children: [
-            Padding(
+      body: Stack(
+        children: [
+          SafeArea(
+            child: Padding(
               padding: EdgeInsets.all(18.0),
-              child: SingleChildScrollView(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    SizedBox(
-                      height: 225,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    height: 200,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Color.fromARGB(255, 234, 227, 236),
+                            blurRadius: 8,
+                            spreadRadius: 5,
+                          )
+                        ],
+                        gradient: LinearGradient(colors: [
+                          Color.fromARGB(255, 255, 255, 255),
+                          Color.fromARGB(255, 54, 6, 175)
+                        ])),
+                    child: Padding(
+                      padding:
+                          const EdgeInsets.only(top: 50, bottom: 50, right: 20),
+                      child: Row(
+                        children: [
+                          Flutturimage(),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 35),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "VARIEBLES",
+                                  selectionColor: Colors.amber,
+                                  style: GoogleFonts.almarai(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 24,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
+                  ),
 
-                    //def
+                  //def
 
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
+                  Expanded(
+                    child: ListView(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(9.0),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -51,16 +88,10 @@ class _WhatisdartState extends State<Variebles> {
                             ],
                           ),
                         ),
-                      ),
-                    ),
 
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          left: 35, right: 9, bottom: 9, top: 15),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
+                        Padding(
+                          padding: const EdgeInsets.only(
+                              left: 35, right: 9, bottom: 9, top: 15),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -76,16 +107,10 @@ class _WhatisdartState extends State<Variebles> {
                             ],
                           ),
                         ),
-                      ),
-                    ),
 
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          left: 35, right: 9, bottom: 9, top: 15),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
+                        Padding(
+                          padding: const EdgeInsets.only(
+                              left: 35, right: 9, bottom: 9, top: 15),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -101,16 +126,10 @@ class _WhatisdartState extends State<Variebles> {
                             ],
                           ),
                         ),
-                      ),
-                    ),
 
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          left: 35, right: 9, bottom: 9, top: 15),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
+                        Padding(
+                          padding: const EdgeInsets.only(
+                              left: 35, right: 9, bottom: 9, top: 15),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -126,16 +145,10 @@ class _WhatisdartState extends State<Variebles> {
                             ],
                           ),
                         ),
-                      ),
-                    ),
 
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          left: 35, right: 9, bottom: 9, top: 15),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
+                        Padding(
+                          padding: const EdgeInsets.only(
+                              left: 35, right: 9, bottom: 9, top: 15),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -151,27 +164,21 @@ class _WhatisdartState extends State<Variebles> {
                             ],
                           ),
                         ),
-                      ),
-                    ),
 
-                    Padding(
-                      padding:
-                          const EdgeInsets.only(left: 20, top: 20, bottom: 10),
-                      child: Text(
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 16),
-                        "SYNTAX",
-                      ),
-                    ),
+                        Padding(
+                          padding: const EdgeInsets.only(
+                              left: 20, top: 20, bottom: 10),
+                          child: Text(
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 16),
+                            "SYNTAX",
+                          ),
+                        ),
 
-                    //2nd def
+                        //2nd def
 
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
+                        Padding(
+                          padding: const EdgeInsets.all(9.0),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -184,15 +191,9 @@ class _WhatisdartState extends State<Variebles> {
                             ],
                           ),
                         ),
-                      ),
-                    ),
 
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
+                        Padding(
+                          padding: const EdgeInsets.all(9.0),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -205,14 +206,8 @@ class _WhatisdartState extends State<Variebles> {
                             ],
                           ),
                         ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
+                        Padding(
+                          padding: const EdgeInsets.all(9.0),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -225,25 +220,19 @@ class _WhatisdartState extends State<Variebles> {
                             ],
                           ),
                         ),
-                      ),
-                    ),
 
-                    Padding(
-                      padding:
-                          const EdgeInsets.only(left: 20, top: 20, bottom: 10),
-                      child: Text(
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 16),
-                        "Final and Const",
-                      ),
-                    ),
+                        Padding(
+                          padding: const EdgeInsets.only(
+                              left: 20, top: 20, bottom: 10),
+                          child: Text(
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 16),
+                            "Final and Const",
+                          ),
+                        ),
 
-                    Padding(
-                      padding: const EdgeInsets.all(9.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 252, 251, 251)),
-                        child: Expanded(
+                        Padding(
+                          padding: const EdgeInsets.all(9.0),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -255,139 +244,92 @@ class _WhatisdartState extends State<Variebles> {
                             ],
                           ),
                         ),
-                      ),
+                      ],
                     ),
-
-                    //button>
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(
-                left: 20,
-                right: 20,
-              ),
-              child: Stack(
-                children: [
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Container(
-                        height: 200,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(12),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Color.fromARGB(255, 234, 227, 236),
-                                blurRadius: 8,
-                                spreadRadius: 5,
-                              )
-                            ],
-                            gradient: LinearGradient(colors: [
-                              Color.fromARGB(255, 255, 255, 255),
-                              Color.fromARGB(255, 54, 6, 175)
-                            ])),
-                        child: Expanded(
-                            child: Padding(
-                          padding: const EdgeInsets.only(
-                              top: 50, bottom: 50, right: 20),
-                          child: Expanded(
-                            child: Row(
-                              children: [
-                                Flutturimage(),
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 35),
-                                  child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        "VARIEBLES",
-                                        selectionColor: Colors.amber,
-                                        style: GoogleFonts.almarai(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 24,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        )),
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: [
-                          Column(
-                            // crossAxisAlignment: CrossAxisAlignment.end,
-                            children: [
-                              InkWell(
-                                  onTap: () {
-                                    Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) => Functions(),
-                                        ));
-                                  },
-                                  child: Padding(
-                                    padding: const EdgeInsets.only(bottom: 18),
-                                    child: Container(
-                                        width: 45,
-                                        height: 45,
-                                        decoration: BoxDecoration(
-                                          color:
-                                              Color.fromARGB(255, 116, 24, 182),
-                                          borderRadius:
-                                              BorderRadius.circular(50),
-                                        ),
-                                        child: Center(
-                                            child: Icon(
-                                          Icons.home,
-                                          size: 25,
-                                          color: Color.fromARGB(
-                                              255, 255, 255, 255),
-                                        ))),
-                                  )),
-                              InkWell(
-                                  onTap: () {
-                                    Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) => Functions(),
-                                        ));
-                                  },
-                                  child: Center(
-                                      child: Container(
-                                    height: 45,
-                                    width: 45,
-                                    decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(50),
-                                        color:
-                                            Color.fromARGB(255, 119, 6, 175)),
-                                    child: Icon(
-                                      Icons.arrow_forward_ios,
-                                      size: 25,
-                                      color: Color.fromARGB(255, 255, 255, 255),
-                                    ),
-                                  ))),
-                              SizedBox(
-                                height: 13,
-                              )
-                            ],
-                          ),
-                        ],
-                      ),
-                    ],
                   ),
                 ],
               ),
             ),
-          ],
-        ),
+          ),
+
+          //button>
+
+          Padding(
+            padding: const EdgeInsets.only(
+              left: 20,
+              right: 20,
+            ),
+            child: Stack(
+              children: [
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Column(
+                          // crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            InkWell(
+                                onTap: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => Functions(),
+                                      ));
+                                },
+                                child: Padding(
+                                  padding: const EdgeInsets.only(bottom: 18),
+                                  child: Container(
+                                      width: 45,
+                                      height: 45,
+                                      decoration: BoxDecoration(
+                                        color:
+                                            Color.fromARGB(255, 116, 24, 182),
+                                        borderRadius: BorderRadius.circular(50),
+                                      ),
+                                      child: Center(
+                                          child: Icon(
+                                        Icons.home,
+                                        size: 25,
+                                        color:
+                                            Color.fromARGB(255, 255, 255, 255),
+                                      ))),
+                                )),
+                            InkWell(
+                                onTap: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => Functions(),
+                                      ));
+                                },
+                                child: Center(
+                                    child: Container(
+                                  height: 45,
+                                  width: 45,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(50),
+                                      color: Color.fromARGB(255, 119, 6, 175)),
+                                  child: Icon(
+                                    Icons.arrow_forward_ios,
+                                    size: 25,
+                                    color: Color.fromARGB(255, 255, 255, 255),
+                                  ),
+                                ))),
+                            SizedBox(
+                              height: 13,
+                            )
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }

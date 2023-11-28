@@ -4,6 +4,7 @@ import 'package:flutter_learningapp/flutter/Buttons.dart';
 import 'package:flutter_learningapp/flutter/containers_and_its_properties.dart';
 import 'package:flutter_learningapp/flutter/dateand_time.dart';
 import 'package:flutter_learningapp/flutter/drop_down.dart';
+import 'package:flutter_learningapp/flutter/fluttertoast.dart';
 import 'package:flutter_learningapp/flutter/gps.dart';
 import 'package:flutter_learningapp/flutter/inkwell.dart';
 import 'package:flutter_learningapp/flutter/introduction_to_widgets.dart';
@@ -647,7 +648,7 @@ class _IndexdartState extends State<Indexflutter> {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Classandobjects(),
+                    builder: (context) => Fluttertoast1(),
                   ));
             },
             child: Padding(
@@ -690,92 +691,6 @@ class _IndexdartState extends State<Indexflutter> {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Classandobjects(),
-                  ));
-            },
-            child: Padding(
-              padding: const EdgeInsets.only(left: 28, right: 28),
-              child: Container(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 20, right: 20),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        " 16) Drawer",
-                        style: TextStyle(
-                            color: Colors.black, fontWeight: FontWeight.bold),
-                      ),
-                      Icon(Icons.arrow_circle_right,
-                          color: const Color.fromARGB(164, 47, 43, 43))
-                    ],
-                  ),
-                ),
-                height: 60,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      blurStyle: BlurStyle.outer,
-                      color: Color.fromARGB(255, 234, 227, 236),
-                      blurRadius: 8,
-                      spreadRadius: 2,
-                    )
-                  ],
-                  borderRadius: BorderRadius.circular(15),
-                  color: Colors.white,
-                ),
-              ),
-            ),
-          ),
-
-          InkWell(
-            onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => Navigations1(),
-                  ));
-            },
-            child: Padding(
-              padding: const EdgeInsets.all(28),
-              child: Container(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 20, right: 20),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        " 17) Navigation",
-                        style: TextStyle(
-                            color: Colors.black, fontWeight: FontWeight.bold),
-                      ),
-                      Icon(Icons.arrow_circle_right,
-                          color: const Color.fromARGB(164, 47, 43, 43))
-                    ],
-                  ),
-                ),
-                height: 60,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      blurStyle: BlurStyle.outer,
-                      color: Color.fromARGB(255, 234, 227, 236),
-                      blurRadius: 8,
-                      spreadRadius: 2,
-                    )
-                  ],
-                  borderRadius: BorderRadius.circular(15),
-                  color: Colors.white,
-                ),
-              ),
-            ),
-          ),
-
-          InkWell(
-            onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
                     builder: (context) => Url_luancher1(),
                   ));
             },
@@ -788,7 +703,7 @@ class _IndexdartState extends State<Indexflutter> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " 18) Url luancher",
+                        " 16) Url luancher",
                         style: TextStyle(
                             color: Colors.black, fontWeight: FontWeight.bold),
                       ),
@@ -831,7 +746,7 @@ class _IndexdartState extends State<Indexflutter> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " 19) Shared Preference",
+                        " 17) Shared Preference",
                         style: TextStyle(
                             color: Colors.black, fontWeight: FontWeight.bold),
                       ),
@@ -874,7 +789,7 @@ class _IndexdartState extends State<Indexflutter> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " 20) State management Tools",
+                        " 18) State management Tools",
                         style: TextStyle(
                             color: Colors.black, fontWeight: FontWeight.bold),
                       ),
@@ -917,7 +832,7 @@ class _IndexdartState extends State<Indexflutter> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " 21) Mediaqueri",
+                        " 19) Mediaqueri",
                         style: TextStyle(
                             color: Colors.black, fontWeight: FontWeight.bold),
                       ),
@@ -960,7 +875,7 @@ class _IndexdartState extends State<Indexflutter> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        " 22) Gps Location",
+                        " 20) Gps Location",
                         style: TextStyle(
                             color: Colors.black, fontWeight: FontWeight.bold),
                       ),
