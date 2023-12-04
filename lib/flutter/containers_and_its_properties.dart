@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_learningapp/classes/cls.dart';
-import 'package:flutter_learningapp/dart/2Datatypes.dart';
+
 import 'package:flutter_learningapp/classes/cls2.dart';
 import 'package:flutter_learningapp/flutter/rows_columns.dart';
 import 'package:google_fonts/google_fonts.dart';

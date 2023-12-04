@@ -19,7 +19,10 @@ class _NavigState extends State<Navig> {
     });
   }
 
-  var list1 = [Home1(), Projects1(), Home1()];
+  var list1 = [
+    Home1(),
+    Projects1(),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,41 +32,29 @@ class _NavigState extends State<Navig> {
           child: list1.elementAt(selectedindex),
         ),
         bottomNavigationBar: BottomNavigationBar(
-          fixedColor: Color.fromARGB(255, 11, 9, 148),
-          items: [
-            BottomNavigationBarItem(
-                icon: Icon(Icons.home, size: 20, color: Colors.black54),
-                label: "Home",
-                activeIcon: Icon(
-                  Icons.home,
-                  size: 20,
-                  color: Color.fromARGB(255, 11, 9, 148),
-                ),
-                backgroundColor: Colors.white),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.shop_2_outlined,
-                    size: 20, color: Colors.black54),
-                label: "Project Puchase",
-                activeIcon: Icon(
-                  Icons.shop_2_outlined,
-                  size: 20,
-                  color: Color.fromARGB(255, 11, 9, 148),
-                ),
-                backgroundColor: Colors.white60),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.question_answer_outlined,
-                    size: 20, color: Colors.black54),
-                label: ("Chat With"),
-                activeIcon: Icon(Icons.question_answer_outlined,
-                    size: 20, color: Color.fromARGB(255, 11, 9, 148))),
-          ],
-          backgroundColor: Colors.white,
-          type: BottomNavigationBarType.fixed,
-          currentIndex: selectedindex,
-          iconSize: 20,
-          mouseCursor: SystemMouseCursors.allScroll,
-          selectedLabelStyle: TextStyle(color: Color.fromARGB(255, 11, 9, 148)),
-          onTap: navigat,
-        ));
+            fixedColor: Color.fromARGB(255, 11, 9, 148),
+            currentIndex: selectedindex,
+            onTap: navigat,
+            items: [
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.home, size: 20, color: Colors.black54),
+                  label: "Home",
+                  activeIcon: Icon(
+                    Icons.home,
+                    size: 20,
+                    color: Color.fromARGB(255, 11, 9, 148),
+                  ),
+                  backgroundColor: Colors.white),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.shop_2_outlined,
+                      size: 20, color: Colors.black54),
+                  label: "Project Purchase",
+                  activeIcon: Icon(
+                    Icons.shop_2_outlined,
+                    size: 20,
+                    color: Color.fromARGB(255, 11, 9, 148),
+                  ),
+                  backgroundColor: Colors.white60),
+            ]));
   }
 }

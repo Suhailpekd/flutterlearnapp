@@ -15,6 +15,7 @@ class Registerpage1 extends StatefulWidget {
 }
 
 class _Registerpage1State extends State<Registerpage1> {
+  var a;
   Future<void> signInWithGoogle() async {
     GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
     GoogleSignInAuthentication? googleAuth = await googleUser?.authentication;
@@ -22,11 +23,15 @@ class _Registerpage1State extends State<Registerpage1> {
         accessToken: googleAuth?.accessToken, idToken: googleAuth?.idToken);
     UserCredential userCredential =
         await FirebaseAuth.instance.signInWithCredential(credential);
-    var a = userCredential.user?.displayName;
+    a = userCredential.user?.displayName;
     var b = userCredential.user?.email;
-
     print(b);
     print(a);
+  }
+
+  Future<void> share() async {
+    var shared = await SharedPreferences.getInstance();
+    shared.setString("name", a);
   }
 
   @override
