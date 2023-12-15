@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Projectview2 extends StatefulWidget {
   var topic;
@@ -26,10 +27,17 @@ class Projectview2 extends StatefulWidget {
 }
 
 class _Projectview2State extends State<Projectview2> {
+  Future<void> _launchUrl() async {
+    final Uri _url = Uri.parse('${widget.gitlink1}');
+    if (!await launchUrl(_url)) {
+      throw Exception('Could not launch $_url');
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
-    double screenHeight = MediaQuery.of(context).size.height;
+    // double screenHeight = MediaQuery.of(context).size.height;
 
     return Scaffold(
       body: SafeArea(
@@ -106,6 +114,9 @@ class _Projectview2State extends State<Projectview2> {
               padding: const EdgeInsets.all(18.0),
               child: Center(
                 child: InkWell(
+                  onTap: () {
+                    _launchUrl();
+                  },
                   child: Container(
                     width: screenWidth,
                     height: 39,

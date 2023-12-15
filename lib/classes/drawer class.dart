@@ -1,6 +1,7 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_learningapp/Registerpage1.dart';
 import 'package:flutter_learningapp/classes/providerdarklight.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:google_sign_in/google_sign_in.dart';
@@ -151,6 +152,11 @@ class _MyWidgetState extends State<Drawerclass> {
                 onTap: () async {
                   await GoogleSignIn().signOut();
                   FirebaseAuth.instance.signOut();
+                  Navigator.pushReplacement(context, MaterialPageRoute(
+                    builder: (context) {
+                      return Registerpage1();
+                    },
+                  ));
                 },
                 title: Text("Log Out")),
             Divider(),

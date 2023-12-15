@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_learningapp/classes/cls.dart';
 import 'package:flutter_learningapp/home1.dart';
+import 'package:flutter_learningapp/tabbar/tabbarflutter%20tests.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Classandobjects extends StatefulWidget {
@@ -207,7 +208,7 @@ class _WhatisdartState extends State<Classandobjects> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => Home1(),
+                                    builder: (context) => Tabbartestsdart(),
                                   ));
                             },
                             child: Center(
